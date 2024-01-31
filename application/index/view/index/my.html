@@ -1,0 +1,1394 @@
+<html lang="en" class="dark hairlines" style="font-size: 39px;">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="icon" href="https://oss.resourceoss.com/game001/loan/764060a585b000.png">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#da532c">
+		<link rel="apple-touch-icon" sizes="114x114" href="https://oss.resourceoss.com/game001/loan/96404778f0e83f.png">
+		<link rel="apple-touch-startup-image" href="https://oss.resourceoss.com/game001/loan/96404778f0e83f.png">
+		
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+		
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#131521">
+		<title>99VIP</title>
+		<style></style>
+		<script type="text/javascript" async=""
+			src="https://s1.kwai.net/kos/s101/nlav11187/pixel/events.js?sdkid=399012253414732194&amp;lib=kwaiq">
+		</script>
+		<!--<script type="text/javascript" src="https://unpkg.com/@dcloudio/uni-webview-js@0.0.3/index.js"></script>-->
+        
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <style>
+            
+            .custom-toast {
+                font-size: 15px;
+                /* 调整字体大小 */
+                border-radius: 8px;
+                /* 设置边缘圆润度 */
+            }
+        
+            .bus-tipmodal .icon-close img {
+                width: 0.8rem;
+                height: 0.8rem;
+            }
+        </style>
+        
+		<!-- rem layout -->
+		<script>
+			;(function flexible(window, document) {
+				var docEl = document.documentElement
+				var dpr = window.devicePixelRatio || 1
+
+				// adjust body font size
+				function setBodyFontSize() {
+					if (document.body) {
+						document.body.style.fontSize = 12 * dpr + 'px'
+					} else {
+						document.addEventListener('DOMContentLoaded', setBodyFontSize)
+					}
+				}
+				setBodyFontSize()
+
+				// set 1rem = viewWidth / 10
+				function setRemUnit() {
+					var rem = docEl.clientWidth / 10
+					docEl.style.fontSize = rem + 'px'
+				}
+
+				setRemUnit()
+
+				// reset rem unit on page resize
+				window.addEventListener('resize', setRemUnit)
+				window.addEventListener('pageshow', function(e) {
+					if (e.persisted) {
+						setRemUnit()
+					}
+				})
+
+				// detect 0.5px supports
+				if (dpr >= 2) {
+					var fakeBody = document.createElement('body')
+					var testElement = document.createElement('div')
+					testElement.style.border = '.5px solid transparent'
+					fakeBody.appendChild(testElement)
+					docEl.appendChild(fakeBody)
+					if (testElement.offsetHeight === 1) {
+						docEl.classList.add('hairlines')
+					}
+					docEl.removeChild(fakeBody)
+				}
+
+				function deviceType(options) {
+					options = {}
+					var isMobile = false
+					if (
+						navigator.userAgent.match(
+							/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+						)
+					) {
+						options.mobile && options.mobile()
+						isMobile = true
+					} else {
+						options.pc && options.pc()
+					}
+					return isMobile
+				}
+				// if (!deviceType() && document.documentElement.clientWidth > 1000) {
+				//   document.getElementsByTagName("html")[0].setAttribute("class", "pc-style");
+				// }
+			})(window, document)
+		</script>
+
+		<script>
+			var isSafari =
+				/Safari/.test(navigator.userAgent) &&
+				!/Chrome/.test(navigator.userAgent)
+			if (isSafari) {
+				let lastTouchEnd = 0 //
+				document.addEventListener('touchstart', function(event) {
+					if (event.touches.length > 1) {
+						event.preventDefault()
+					}
+				})
+				document.addEventListener(
+					'touchend',
+					function(event) {
+						let now = new Date().getTime()
+						if (now - lastTouchEnd <= 500) {
+							event.preventDefault()
+						} else {
+							lastTouchEnd = now
+						}
+					},
+					false
+				)
+				document.addEventListener('gesturestart', function(event) {
+					event.preventDefault()
+				})
+				document.addEventListener('dblclick', function(event) {
+					event.preventDefault()
+				})
+			}
+		</script>
+
+		<!-- kwaiq -->
+		<!--<script>-->
+		<!--	!(function(e, t) {-->
+		<!--		'object' == typeof exports && 'object' == typeof module ?-->
+		<!--			(module.exports = t()) :-->
+		<!--			'function' == typeof define && define.amd ?-->
+		<!--			define([], t) :-->
+		<!--			'object' == typeof exports ?-->
+		<!--			(exports.install = t()) :-->
+		<!--			(e.install = t())-->
+		<!--	})(window, function() {-->
+		<!--		return (function(e) {-->
+		<!--			var t = {}-->
+
+		<!--			function n(r) {-->
+		<!--				if (t[r]) return t[r].exports-->
+		<!--				var o = (t[r] = {-->
+		<!--					i: r,-->
+		<!--					l: !1,-->
+		<!--					exports: {}-->
+		<!--				})-->
+		<!--				return e[r].call(o.exports, o, o.exports, n), (o.l = !0), o.exports-->
+		<!--			}-->
+		<!--			return (-->
+		<!--				(n.m = e),-->
+		<!--				(n.c = t),-->
+		<!--				(n.d = function(e, t, r) {-->
+		<!--					n.o(e, t) ||-->
+		<!--						Object.defineProperty(e, t, {-->
+		<!--							enumerable: !0,-->
+		<!--							get: r-->
+		<!--						})-->
+		<!--				}),-->
+		<!--				(n.r = function(e) {-->
+		<!--					'undefined' != typeof Symbol &&-->
+		<!--						Symbol.toStringTag &&-->
+		<!--						Object.defineProperty(e, Symbol.toStringTag, {-->
+		<!--							value: 'Module'-->
+		<!--						}),-->
+		<!--						Object.defineProperty(e, '__esModule', {-->
+		<!--							value: !0-->
+		<!--						})-->
+		<!--				}),-->
+		<!--				(n.t = function(e, t) {-->
+		<!--					if ((1 & t && (e = n(e)), 8 & t)) return e-->
+		<!--					if (4 & t && 'object' == typeof e && e && e.__esModule) return e-->
+		<!--					var r = Object.create(null)-->
+		<!--					if (-->
+		<!--						(n.r(r),-->
+		<!--							Object.defineProperty(r, 'default', {-->
+		<!--								enumerable: !0,-->
+		<!--								value: e-->
+		<!--							}),-->
+		<!--							2 & t && 'string' != typeof e)-->
+		<!--					)-->
+		<!--						for (var o in e)-->
+		<!--							n.d(-->
+		<!--								r,-->
+		<!--								o,-->
+		<!--								function(t) {-->
+		<!--									return e[t]-->
+		<!--								}.bind(null, o)-->
+		<!--							)-->
+		<!--					return r-->
+		<!--				}),-->
+		<!--				(n.n = function(e) {-->
+		<!--					var t =-->
+		<!--						e && e.__esModule ?-->
+		<!--						function() {-->
+		<!--							return e.default-->
+		<!--						} :-->
+		<!--						function() {-->
+		<!--							return e-->
+		<!--						}-->
+		<!--					return n.d(t, 'a', t), t-->
+		<!--				}),-->
+		<!--				(n.o = function(e, t) {-->
+		<!--					return Object.prototype.hasOwnProperty.call(e, t)-->
+		<!--				}),-->
+		<!--				(n.p = ''),-->
+		<!--				n((n.s = 0))-->
+		<!--			)-->
+		<!--		})([-->
+		<!--			function(e, t, n) {-->
+		<!--				'use strict'-->
+		<!--				var r =-->
+		<!--					(this && this.__spreadArray) ||-->
+		<!--					function(e, t, n) {-->
+		<!--						if (n || 2 === arguments.length)-->
+		<!--							for (var r, o = 0, i = t.length; o < i; o++)-->
+		<!--								(!r && o in t) ||-->
+		<!--								(r || (r = Array.prototype.slice.call(t, 0, o)),-->
+		<!--									(r[o] = t[o]))-->
+		<!--						return e.concat(r || Array.prototype.slice.call(t))-->
+		<!--					}!(function(e) {-->
+		<!--						var t = window;-->
+		<!--						(t.KwaiAnalyticsObject = e), (t[e] = t[e] || [])-->
+		<!--						var n = t[e]-->
+		<!--						n.methods = [-->
+		<!--							'page',-->
+		<!--							'track',-->
+		<!--							'identify',-->
+		<!--							'instances',-->
+		<!--							'debug',-->
+		<!--							'on',-->
+		<!--							'off',-->
+		<!--							'once',-->
+		<!--							'ready',-->
+		<!--							'alias',-->
+		<!--							'group',-->
+		<!--							'enableCookie',-->
+		<!--							'disableCookie'-->
+		<!--						]-->
+		<!--						var o = function(e, t) {-->
+		<!--							e[t] = function() {-->
+		<!--								var n = Array.from(arguments),-->
+		<!--									o = r([t], n, !0)-->
+		<!--								e.push(o)-->
+		<!--							}-->
+		<!--						}-->
+		<!--						n.methods.forEach(function(e) {-->
+		<!--								o(n, e)-->
+		<!--							}),-->
+		<!--							(n.instance = function(e) {-->
+		<!--								var t = n._i[e] || []-->
+		<!--								return (-->
+		<!--									n.methods.forEach(function(e) {-->
+		<!--										o(t, e)-->
+		<!--									}),-->
+		<!--									t-->
+		<!--								)-->
+		<!--							}),-->
+		<!--							(n.load = function(t, r) {-->
+		<!--								;-->
+		<!--								(n._i = n._i || {}),-->
+		<!--								(n._i[t] = []),-->
+		<!--								(n._i[t]._u =-->
+		<!--									'https://s1.kwai.net/kos/s101/nlav11187/pixel/events.js'),-->
+		<!--								(n._t = n._t || {}),-->
+		<!--								(n._t[t] = +new Date()),-->
+		<!--								(n._o = n._o || {}),-->
+		<!--								(n._o[t] = r || {})-->
+		<!--								var o = document.createElement('script');-->
+		<!--								(o.type = 'text/javascript'),-->
+		<!--								(o.async = !0),-->
+		<!--								(o.src =-->
+		<!--									'https://s1.kwai.net/kos/s101/nlav11187/pixel/events.js?sdkid=' +-->
+		<!--									t +-->
+		<!--									'&lib=' +-->
+		<!--									e)-->
+		<!--								var i = document.getElementsByTagName('script')[0]-->
+		<!--								i.parentNode.insertBefore(o, i)-->
+		<!--							})-->
+		<!--					})('kwaiq')-->
+		<!--			}-->
+		<!--		])-->
+		<!--	})-->
+		<!--</script>-->
+		<!--<script>-->
+		<!--	kwaiq.load('399012253414732194')-->
+		<!--	kwaiq.page()-->
+		<!--</script>-->
+
+		<style>
+			.pc-style {
+				font-size: 54px !important;
+				max-width: 540px;
+				margin: 0px auto;
+				background: #f5f5f5 !important;
+			}
+
+			.app-loading-wrap {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				height: 100vh;
+				background-color: #121725;
+				background-image: url(https://oss.resourceoss.com/game001/loan/0640477e8adfb5.gif);
+				background-size: 48% auto;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+		</style>
+		<link rel="modulepreload" crossorigin="" href="__CDN__/assets/pubnew/bundle.d3169b93.js">
+		<link rel="modulepreload" crossorigin="" href="__CDN__/assets/pubnew/icons.ee65c48b.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/bundle.a7336069.css">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/index.bd921fe8.css">
+		<script type="module">
+			try {
+				import.meta.url;
+				import("_").catch(() => 1);
+			} catch (e) {}
+			window.__vite_is_modern_browser = true;
+		</script>
+		<script type="module">
+			! function() {
+				if (window.__vite_is_modern_browser) return;
+				console.warn(
+					"vite: loading legacy build because dynamic import or import.meta.url is unsupported, syntax error above should be ignored"
+					);
+				var e = document.getElementById("vite-legacy-polyfill"),
+					n = document.createElement("script");
+				n.src = e.src, n.onload = function() {
+					System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))
+				}, document.body.appendChild(n)
+			}();
+		</script>
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Home.cbb4b96f.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/Home.c5f21993.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/BackIcon.0c3788dd.js">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/GameCard.5347132d.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/GameCard.8c4a1a11.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/common.32a54c00.js">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/pay.46ebe093.js">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Audios.07b47c7e.js">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Audios.d5459051.js">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/store.3a5bf4f7.js">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/index.63484d31.js">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Recharge.53f44fe2.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/Recharge.a6a91e23.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Message.c5c48d95.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/Message.ada2a5e7.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/message.3949021a.js">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Mine.fd2bf6ed.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/Mine.ee162df7.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Withdraw.0c991047.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/Withdraw.f5c1f316.css">
+		<link type="text/css" rel="stylesheet" charset="UTF-8"
+			href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.69JJaQ5G5xA.L.W.O/d=0/rs=AN8SPfpC36MIoWPngdVwZ4RUzeJYZaC7rg/m=el_main_css">
+			
+			
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Contact.e775aa83.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/Contact.8f3a8edc.css">
+		
+		
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/RecentGames.d4407ea2.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/RecentGames.252325bc.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/detail.67c74a01.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/detail.f821a184.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Setting.addde303.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/Setting.26b5c406.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Privacy.665c2255.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/Privacy.0ed32e7b.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/VipDesc.b23611d2.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/VipDesc.b2b3bc4b.css">
+	</head>
+	<body style="font-size: 36px;" class="">
+		<div id="app" data-v-app="">
+			<div class="app-wrapper" data-v-1dbc0f80="">
+				<div class="nav-bar-wrap" id="" data-v-1dbc0f80="" style="display: none;">
+					<div class="fixed-placeholder">&nbsp;</div>
+					<div class="nav-bar">
+						<div class="header pr10">
+							<div class="flex-a left pl15 w180">
+								<div class="el-image h18 w20 gm-image h18 w20"><img
+										src="https://oss.resourceoss.com/game001/loan/763d9ca8eeded7.png"
+										class="el-image__inner" style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+								<div class="b cfff lh14 ml8">
+									<div class="flex-a"><span class="fs14">Mover</span><span class="c-theme">Bet</span>
+									</div>
+									<div class="fs10">.com</div>
+								</div>
+							</div>
+							<div class="flex-a">
+								<div class="balance flex-a br5 h30">
+									<div class="flex-a">
+										<div class="h22 w22 pointer flex-a-j mr4"><img class="h18 218"
+												src="https://oss.resourceoss.com/game001/loan/4635d3150a966e.png"
+												alt=""></div><span>R$0</span>
+									</div><img src="https://oss.resourceoss.com/game001/loan/464009827c27a2.png" alt=""
+										class="w26 h26 ml10">
+								</div>
+								<div class="message-icon"><img
+										src="https://oss.resourceoss.com/game001/loan/26400984287e38.png" alt=""
+										class="w26 h26 ml6">
+									<div class="dot"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="el-overlay" style="z-index: 2029; display: none;">
+						<div aria-modal="true" aria-labelledby="el-id-5214-0" aria-describedby="el-id-5214-1"
+							class="el-drawer ltr home-menu-drawer" role="dialog" style="width: 30%;"><span
+								class="el-drawer__sr-focus" tabindex="-1"></span><!--v-if-->
+							<div id="el-id-5214-1" class="el-drawer__body">
+								<div class="pl10 pr10 pt50 pb18"><img
+										src="https://oss.resourceoss.com/game001/loan/7637890947cdf7.png" alt=""
+										class="close h18">
+									<div class="head fs18 b">
+										<div class="el-image avatar w58 h58 mb16 gm-image avatar w58 h58 mb16"><img
+												src="https://oss.resourceoss.com/game001/loan/96400a0d341dd6.png"
+												class="el-image__inner"
+												style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+										<div class="ta b">Mario Hawkins | ID: 0</div>
+										<div class="vip mt6 flex-a fs13 b"><span>Nível atual:</span><span
+												class="cgold ml4">VIP 0</span></div>
+									</div>
+								</div>
+								<div class="list-wrap">
+									<div class="row"><img
+											src="https://oss.resourceoss.com/game001/loan/663cab5adeab27.png" alt=""
+											class="w18 h18"><span class="name">Introdução ao nível VIP</span><svg
+											class="svg-icon vector-right arrow" fill="currentColor" width="8"
+											height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M0.600147 6.0001L6.30015 0.300098C6.68675 -0.0865017 7.31355 -0.0865017 7.70015 0.300098C8.08675 0.686697 8.08675 1.3135 7.70015 1.7001L3.40015 6.0001L7.70015 10.3001C8.08675 10.6867 8.08675 11.3135 7.70015 11.7001C7.31355 12.0867 6.68675 12.0867 6.30015 11.7001L0.600147 6.0001Z">
+											</path>
+										</svg></div>
+									<div class="row"><img
+											src="https://oss.resourceoss.com/game001/loan/163cbafa0e28ff.png" alt=""
+											class="w18 h18"><span class="name">Inscreva-se no canal</span><svg
+											class="svg-icon vector-right arrow" fill="currentColor" width="8"
+											height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M0.600147 6.0001L6.30015 0.300098C6.68675 -0.0865017 7.31355 -0.0865017 7.70015 0.300098C8.08675 0.686697 8.08675 1.3135 7.70015 1.7001L3.40015 6.0001L7.70015 10.3001C8.08675 10.6867 8.08675 11.3135 7.70015 11.7001C7.31355 12.0867 6.68675 12.0867 6.30015 11.7001L0.600147 6.0001Z">
+											</path>
+										</svg></div>
+									<div class="row"><img
+											src="https://oss.resourceoss.com/game001/loan/463cab5ed2c131.png" alt=""
+											class="w18 h18"><span class="name">Abrir no computador</span><svg
+											class="svg-icon vector-right arrow" fill="currentColor" width="8"
+											height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M0.600147 6.0001L6.30015 0.300098C6.68675 -0.0865017 7.31355 -0.0865017 7.70015 0.300098C8.08675 0.686697 8.08675 1.3135 7.70015 1.7001L3.40015 6.0001L7.70015 10.3001C8.08675 10.6867 8.08675 11.3135 7.70015 11.7001C7.31355 12.0867 6.68675 12.0867 6.30015 11.7001L0.600147 6.0001Z">
+											</path>
+										</svg></div>
+									<div class="row"><img
+											src="https://oss.resourceoss.com/game001/loan/563cbaff98a84b.png" alt=""
+											class="w18 h18"><span class="name">Bônus de login VIP</span><svg
+											class="svg-icon vector-right arrow" fill="currentColor" width="8"
+											height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M0.600147 6.0001L6.30015 0.300098C6.68675 -0.0865017 7.31355 -0.0865017 7.70015 0.300098C8.08675 0.686697 8.08675 1.3135 7.70015 1.7001L3.40015 6.0001L7.70015 10.3001C8.08675 10.6867 8.08675 11.3135 7.70015 11.7001C7.31355 12.0867 6.68675 12.0867 6.30015 11.7001L0.600147 6.0001Z">
+											</path>
+										</svg></div>
+									<div class="row"><img
+											src="https://oss.resourceoss.com/game001/loan/563cbb01ececcc.png" alt=""
+											class="w18 h18"><span class="name">Retirar dinheiro</span><svg
+											class="svg-icon vector-right arrow" fill="currentColor" width="8"
+											height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M0.600147 6.0001L6.30015 0.300098C6.68675 -0.0865017 7.31355 -0.0865017 7.70015 0.300098C8.08675 0.686697 8.08675 1.3135 7.70015 1.7001L3.40015 6.0001L7.70015 10.3001C8.08675 10.6867 8.08675 11.3135 7.70015 11.7001C7.31355 12.0867 6.68675 12.0867 6.30015 11.7001L0.600147 6.0001Z">
+											</path>
+										</svg></div>
+									<div class="row"><img
+											src="https://oss.resourceoss.com/game001/loan/863cc099a3cb51.png" alt=""
+											class="w18 h18"><span class="name">Registro de saldo</span><svg
+											class="svg-icon vector-right arrow" fill="currentColor" width="8"
+											height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M0.600147 6.0001L6.30015 0.300098C6.68675 -0.0865017 7.31355 -0.0865017 7.70015 0.300098C8.08675 0.686697 8.08675 1.3135 7.70015 1.7001L3.40015 6.0001L7.70015 10.3001C8.08675 10.6867 8.08675 11.3135 7.70015 11.7001C7.31355 12.0867 6.68675 12.0867 6.30015 11.7001L0.600147 6.0001Z">
+											</path>
+										</svg></div>
+									<div class="row"><img
+											src="https://oss.resourceoss.com/game001/loan/763cc09ef5ea55.png" alt=""
+											class="w18 h18"><span class="name">Resgatar Código</span><svg
+											class="svg-icon vector-right arrow" fill="currentColor" width="8"
+											height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M0.600147 6.0001L6.30015 0.300098C6.68675 -0.0865017 7.31355 -0.0865017 7.70015 0.300098C8.08675 0.686697 8.08675 1.3135 7.70015 1.7001L3.40015 6.0001L7.70015 10.3001C8.08675 10.6867 8.08675 11.3135 7.70015 11.7001C7.31355 12.0867 6.68675 12.0867 6.30015 11.7001L0.600147 6.0001Z">
+											</path>
+										</svg></div>
+								</div>
+								<div class="ta mt40">— Atendimento ao cliente oficial —</div>
+								<div class="flex-a-j mt16 pb40">
+									<div><img src="https://h.moverbet.com__CDN__/assets/pubnew/whatsapp.5fa0f5f1.png"
+											class="w44 h44 mr20" alt=""></div>
+									<div><img
+											src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAABYCAMAAABGS8AGAAABBVBMVEUAAAAAm9sAm9sAm9sAm9sAm9sAm9sAm9sAm9sAm9sAm9sAm9sAm9sAm9sAm9sAm9sAm9sAm9sAm9sAm9sAm9sAm9sAm9sAm9v///8Am9wTo974/P7P7PkmquH2/P4Jn93x+v3u+f2X1/EqrOLH6fjC6PdtxusXpd8Fnd36/f8dp98Amtnq9/yR1PA/teXd8vu44/Wa2PGU1fFpxes5suQhqeAOoN3J6vi95vah2/J6y+10yexxx+tlw+rm9fzj9Pu14vWn3PKK0e9gwekyr+Lz+v2x4fSs3/R+ze1dwOlXvuhOueZIuObW7/lTvOeO0++65PaCz+8Amd7T7vkAo9mR3O1XretLhmOxAAAAF3RSTlMA10QiFQnLx+3PaPnawqajmpdcWPbra28cirIAAASJSURBVFjDtdlnX+JAEAbweIi9nHp3Mwm9hd5BuiJFqnpe+/4f5S5eAmRnNwXx/1Z5frCZmU020ibPt4vjI9jK0fHFN4/Ed30I73R4LVGfzmAHzj4xsd7PsCOfvZu5+wewMwf7G7lnsENnq2TvIezUgbEadusbKqjR0s9iJI2+u6dSVK2F7NZZrwewEpvG08hIJ9oBsPK/NvZASFEbKNBQFRDa03JvQCSTD6KF4EsGRG7+BYuuXLLsQxu+qCLqQUnyAFeqM0YHIj1Bskc6AZ5AAx2K17kBJ9IFcDyH0bHIMy/hQjoGKo+u5IE6lo5oP/TRpUfaMUfSKTBuE+ha4pZNOZVIOTRxC80Um0OCH3ErD3bBFdxS3jp4iK74O7Fb4yMzq+BAEJ2LlAugieKbccAiuOGiEHr6nMgujR4UB1fRofuXkQw6eYG6rig4GXHYD/OQDGtt1IWTguAyOvDUDggLNMoPzvjQju9hCcT9+s9JbnDFvrgyQAVw7YUXrFiXWrhVkDcLfgC6Oa6NFU6wajnOq0nT1p3AFvyXHeCGKifYjyJ3lRqYTBE7YGiavgANjqFAacbMxIIfsZddTW9zjQZI8BR5iq8xdlxrHbxRGyM06ZDgOK+4FpAF2ZQ7u0cMj2CthyZ9NjiUJsXVzdDSetT6efNHyExXjVNMcIEprnIBqK5Wkf6k5dyqMcEqKS6i9rZazZB5ydl2rRrBZE7ktOKiUgPUTH4wJYKMChP83dgVh7fAsyiippyVwaSDjD4T/PT2ZQcj4FJa+Gb6g8mVH8g1Z4JziPhdkWVubk9vAhWIImlTJli7BsAXK9Ht0pChw4oJxn8WsEY3iPQSqGcSnOYE42RObqQLDaNYeMsvv9oG6+UYmQwz2geMfsyvts868JRslyKHhnRJ1UdU9rm4utYKL1aGOzpjSbltSrRHAMl1KZVCwJONIdqUG/1NjWiO3PGR4CGiXYNEUawMAnIeiQoZQkJTEEogUSVjUyDdE+eGxkjU2EHvQ74miNWQCLODHhLINxHnZlUk+oLNlGqBWAuJjuPtPw9iP5Eg27/RIsRrVpib5LUHDe4gV9fYmmjwkvPfzm8Ke/q3K5LFltvICiokWPgEPQdN5h4xUf9l3kkn9IK4uPFeGrmI4T+/rLclX50Ei+fFSMs1puNv7h233aMCKBGkYiDXc2iIB2BlTrou6eZxTJEDuc3LM1tduwEyVDcPkHdQCLK/N2vc45jFrR55ybiK+GkT6HebYWYhAhbBMENCNEmHpC5JsPvjoFbsdsGs0OCDDkJaYBccSuzo6IYeNjXRNXp7cMo5HktN0KUHOvqOuAd6L+jKgHugd8k9goygY5EFL+FScGhaj7/70NQDfN2wo6+rCo95pXPhwXQabfgqCvCda6+YQKQetT5Kj9ZB5Nru8L/rRwF/1/rw3/51RTvhI0vg7HWFdAXWUrVqpe8v5oLBXNHfr1RrKbB29UGvhA69km5/b5e5e/sf+drN4L3aVe6Vl321ubeTZfgkUTfn7409v5H4PCeXB1+/bBP55evB5YlnM+sv973cVpi+W1QAAAAASUVORK5CYII="
+											class="w44 h44" alt=""></div>
+								</div>
+							</div><!--v-if-->
+						</div>
+					</div>
+					<div class=""></div>
+				</div>
+				<div class="app-main" data-v-1dbc0f80="">
+					<div class="main" data-v-1dbc0f80=""><!---->
+						<div class="van-pull-refresh" data-v-3cddf8fe="">
+							<div class="van-pull-refresh__track" style="transition-duration: 0ms;">
+								<div class="van-pull-refresh__head"></div>
+								<div class="mine-page-wrap pall10" data-v-3cddf8fe="">
+									<div class="card h284 pl15 pr15" data-v-3cddf8fe="">
+										<div class="header pt8 pl8" data-v-3cddf8fe="">
+											<div class="flex-a" data-v-3cddf8fe="">
+												<div class="avatar h58 w58 mr6" data-v-3cddf8fe="">
+													<div class="el-image gm-image" data-v-3cddf8fe=""><img
+															src="https://oss.resourceoss.com/game001/loan/96400a0d341dd6.png"
+															class="el-image__inner"
+															style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+												</div>
+												<div class="flex1 cfff fs13 b" data-v-3cddf8fe="">
+													<div class="flex-a" data-v-3cddf8fe="">
+														<p class="mr10" data-v-3cddf8fe="" id="userinfonickname">nickname</p>
+													</div>
+													<div class="flex-a mt4" data-v-3cddf8fe=""><span
+															data-v-3cddf8fe="" id="userinfoid">ID: 0</span>
+														<div class="el-image w16 h16 ml10 gm-image w16 h16 ml10"
+															data-v-3cddf8fe=""><img
+																src="https://oss.resourceoss.com/game001/loan/763cd03fede9bc.png"
+																class="el-image__inner"
+																style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+													</div>
+												
+												</div><a href="{:url('index/index/setting')}" class="" data-v-3cddf8fe="">
+													<div class="el-image w92 h28 gm-image w92 h28" data-v-3cddf8fe="">
+														<img src="https://oss.resourceoss.com/game001/loan/864009edb83f13.png"
+															class="el-image__inner"
+															style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+												</a>
+											</div>
+										</div>
+										<div class="flex-a spa mt20" data-v-3cddf8fe="">
+									
+											<div class="flex-a-j b" data-v-3cddf8fe="">
+												<div class="fs12 mr4" data-v-3cddf8fe="">R$</div>
+												<div class="fs18" data-v-3cddf8fe="" id="userinfomoney">0</div>
+												<div class="h22 w22 pointer flex-a-j ml6" data-v-3cddf8fe=""><img
+														class="h18 218"
+														src="https://oss.resourceoss.com/game001/loan/4635d3150a966e.png"
+														alt=""></div>
+											</div>
+										</div>
+									
+										<div class="flex-a-j mt10" data-v-3cddf8fe="">
+										    
+											<div class="w139 h36 br8 flex-a-j cfff b fs mr20" data-v-3cddf8fe="" onclick="switchtab(1)"
+												style="background-color: rgb(0, 132, 43);"><span data-v-3cddf8fe="">
+													<font style="vertical-align: inherit;">transferir em</font>
+												</span></div>
+											<div class="bgmain w139 h36 br8 flex-a-j cfff b fs" data-v-3cddf8fe="" onclick="switchtab(2)">
+											    <span data-v-3cddf8fe="">
+											        <font style="vertical-align: inherit;">transferir</font>
+												</span>
+											</div>
+											
+										</div>
+										
+										<!--pg  ag cq9 jdb pp-->
+										    <div style="display: flex;
+                                                        justify-content: space-around;
+                                                        line-height: 35px;" class="mt10">
+										        
+    										        <div>
+    										            
+        										        <div>
+        										            A G：<span id="ag">0</span>
+        										        </div>
+        										        
+        										        <div>
+        										            JDB：<span id="jdb">0</span>
+        										        </div>
+        										        
+        										        <div>
+        										            CQ9：<span id="cq9">0</span>
+        										        </div>
+        										        
+        										    </div>
+        										    
+        										    <div>
+        										         <div>
+        										            P G：<span id="pg">0</span>
+        										        </div>
+        										        <div id="">
+        											        P P：<span id="pp">0</span>
+        										        </div>  
+        										    </div>
+        										    
+										    </div>
+										
+									</div>
+									<div class="bg2 br8 mt10 block" data-v-3cddf8fe="">
+									    
+									    <a href="{:url('index/index/rech')}"
+											class="item" data-v-3cddf8fe="">
+											<div class="el-image icon gm-image icon" data-v-3cddf8fe=""><img
+													src="https://oss.resourceoss.com/game001/loan/06400a01a0d469.png"
+													style="width:100%;height:100%;"><!--v-if--><!--v-if--></div>
+											<div class="flex1" data-v-3cddf8fe="">recarrega</div><svg
+												class="svg-icon vector-right arrow" fill="currentColor" width="8"
+												height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg"
+												data-v-3cddf8fe="">
+												<path
+													d="M0.600147 6.0001L6.30015 0.300098C6.68675 -0.0865017 7.31355 -0.0865017 7.70015 0.300098C8.08675 0.686697 8.08675 1.3135 7.70015 1.7001L3.40015 6.0001L7.70015 10.3001C8.08675 10.6867 8.08675 11.3135 7.70015 11.7001C7.31355 12.0867 6.68675 12.0867 6.30015 11.7001L0.600147 6.0001Z">
+												</path>
+											</svg>
+										</a>
+										
+										
+										
+													
+										<a href="{:url('index/index/rechs')}" class="item" data-v-3cddf8fe="">
+											<div class="el-image icon gm-image icon" data-v-3cddf8fe=""><img
+													src="https://oss.resourceoss.com/game001/loan/564009ffced7f7.png"
+													class="el-image__inner"
+													style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+											<div class="flex1" data-v-3cddf8fe="">retirar</div><svg
+												class="svg-icon vector-right arrow" fill="currentColor" width="8"
+												height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg"
+												data-v-3cddf8fe="">
+												<path
+													d="M0.600147 6.0001L6.30015 0.300098C6.68675 -0.0865017 7.31355 -0.0865017 7.70015 0.300098C8.08675 0.686697 8.08675 1.3135 7.70015 1.7001L3.40015 6.0001L7.70015 10.3001C8.08675 10.6867 8.08675 11.3135 7.70015 11.7001C7.31355 12.0867 6.68675 12.0867 6.30015 11.7001L0.600147 6.0001Z">
+												</path>
+											</svg>
+										</a>
+										
+										
+										
+										<!--<a href="{:url('index/user/index')}">会员中心</a>-->
+										<a href="{:url('index/index/message')}" class="item" data-v-3cddf8fe="">
+											<div class="el-image icon gm-image icon" data-v-3cddf8fe=""><img
+													src="https://oss.resourceoss.com/game001/loan/66400a036f38d7.png"
+													class="el-image__inner"
+													style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+											<div class="flex1" data-v-3cddf8fe="">Notificação</div><svg
+												class="svg-icon vector-right arrow" fill="currentColor" width="8"
+												height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg"
+												data-v-3cddf8fe="">
+												<path
+													d="M0.600147 6.0001L6.30015 0.300098C6.68675 -0.0865017 7.31355 -0.0865017 7.70015 0.300098C8.08675 0.686697 8.08675 1.3135 7.70015 1.7001L3.40015 6.0001L7.70015 10.3001C8.08675 10.6867 8.08675 11.3135 7.70015 11.7001C7.31355 12.0867 6.68675 12.0867 6.30015 11.7001L0.600147 6.0001Z">
+												</path>
+											</svg>
+										</a>
+										
+							
+							
+										
+										<!--<div class="item" data-v-3cddf8fe="">-->
+										<!--	<div class="el-image icon gm-image icon" data-v-3cddf8fe=""><img-->
+										<!--			src="https://oss.resourceoss.com/game001/loan/164009f6e600a9.png"-->
+										<!--			class="el-image__inner"-->
+										<!--			style="object-fit: cover;"></div>-->
+										<!--	<div class="flex1" data-v-3cddf8fe="">Grupo de Telegram</div><svg-->
+										<!--		class="svg-icon vector-right arrow" fill="currentColor" width="8"-->
+										<!--		height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg"-->
+										<!--		data-v-3cddf8fe="">-->
+										<!--		<path-->
+										<!--			d="M0.600147 6.0001L6.30015 0.300098C6.68675 -0.0865017 7.31355 -0.0865017 7.70015 0.300098C8.08675 0.686697 8.08675 1.3135 7.70015 1.7001L3.40015 6.0001L7.70015 10.3001C8.08675 10.6867 8.08675 11.3135 7.70015 11.7001C7.31355 12.0867 6.68675 12.0867 6.30015 11.7001L0.600147 6.0001Z">-->
+										<!--		</path>-->
+										<!--	</svg>-->
+										<!--</div>-->
+										 
+										 <a href="{:url('index/index/contact')}"  class="item" data-v-3cddf8fe="">
+											<div class="el-image icon gm-image icon" data-v-3cddf8fe=""><img
+													src="https://oss.resourceoss.com/game001/loan/564009fa57641f.png"
+													class="el-image__inner"
+													style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+											<div class="flex1" data-v-3cddf8fe="">Contate-Nos</div><svg
+												class="svg-icon vector-right arrow" fill="currentColor" width="8"
+												height="12" viewBox="0 0 8 12" xmlns="http://www.w3.org/2000/svg"
+												data-v-3cddf8fe="">
+												<path
+													d="M0.600147 6.0001L6.30015 0.300098C6.68675 -0.0865017 7.31355 -0.0865017 7.70015 0.300098C8.08675 0.686697 8.08675 1.3135 7.70015 1.7001L3.40015 6.0001L7.70015 10.3001C8.08675 10.6867 8.08675 11.3135 7.70015 11.7001C7.31355 12.0867 6.68675 12.0867 6.30015 11.7001L0.600147 6.0001Z">
+												</path>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div><!---->
+					</div>
+				</div>
+				<div class="app-footer-wrap pc" data-v-1833d007="" data-v-1dbc0f80="">
+					<div class="logo flex-a" data-v-1833d007="">
+						<div class="el-image mr14 br6 w49 h49 gm-image mr14 br6 w49 h49" data-v-1833d007=""><img alt=""
+								srcset="" src="https://oss.resourceoss.com/game001/loan/96404778f0e83f.png"
+								class="el-image__inner" style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+						<div class="" data-v-1833d007="">
+							<div class="fs16 cfff" data-v-1833d007="">99VIP</div>
+							<div class="mt6" data-v-1833d007="">© 2023 All rights reserved.</div>
+						</div>
+					</div>
+					<div class="flex-a-j pl15 pr15 mt20" data-v-1833d007="">
+						<div class="el-image flex1" data-v-1833d007=""><img
+								src="https://oss.resourceoss.com/game001/loan/363e8ce8b981dd.png"
+								class="el-image__inner"><!--v-if--><!--v-if--></div>
+					</div>
+					<div class="el-collapse collapse pall15" role="tablist" aria-multiselectable="true"
+						data-v-1833d007="">
+						<div class="el-collapse-item" data-v-1833d007="">
+							<div role="tab" aria-expanded="false" aria-controls="el-collapse-content-6184"
+								aria-describedby="el-collapse-content-6184">
+								<div id="el-collapse-head-6184" class="el-collapse-item__header" role="button"
+									tabindex="0">Jogo<i class="el-icon el-collapse-item__arrow"><svg
+											viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+											<path fill="currentColor"
+												d="M340.864 149.312a30.592 30.592 0 0 0 0 42.752L652.736 512 340.864 831.872a30.592 30.592 0 0 0 0 42.752 29.12 29.12 0 0 0 41.728 0L714.24 534.336a32 32 0 0 0 0-44.672L382.592 149.376a29.12 29.12 0 0 0-41.728 0z">
+											</path>
+										</svg></i></div>
+							</div>
+							<div id="el-collapse-content-6184" class="el-collapse-item__wrap" role="tabpanel"
+								aria-hidden="true" aria-labelledby="el-collapse-head-6184" style="display: none;">
+								<div class="el-collapse-item__content"><a href="/game/APR3788PB639QK81"
+										class="h30 lh30 gamelink" data-v-1833d007="">Mines</a><a
+										href="/game/APR6381K3789Q8PB" class="h30 lh30 gamelink"
+										data-v-1833d007="">Crash</a><a href="/game/APR938B63QK8P178"
+										class="h30 lh30 gamelink" data-v-1833d007="">Fruits</a><a
+										href="/game/MFJVEGTKWFDZTR9X" class="h30 lh30 gamelink"
+										data-v-1833d007="">Dice</a><a href="/game/APR178B63938PQK8"
+										class="h30 lh30 gamelink" data-v-1833d007="">Double</a><a
+										href="/game/APR38B6K8P89173Q" class="h30 lh30 gamelink"
+										data-v-1833d007="">Poker</a></div>
+							</div>
+						</div>
+						<div class="el-collapse-item" data-v-1833d007="">
+							<div role="tab" aria-expanded="false" aria-controls="el-collapse-content-4571"
+								aria-describedby="el-collapse-content-4571">
+								<div id="el-collapse-head-4571" class="el-collapse-item__header" role="button"
+									tabindex="0">Ajuda<i class="el-icon el-collapse-item__arrow"><svg
+											viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+											<path fill="currentColor"
+												d="M340.864 149.312a30.592 30.592 0 0 0 0 42.752L652.736 512 340.864 831.872a30.592 30.592 0 0 0 0 42.752 29.12 29.12 0 0 0 41.728 0L714.24 534.336a32 32 0 0 0 0-44.672L382.592 149.376a29.12 29.12 0 0 0-41.728 0z">
+											</path>
+										</svg></i></div>
+							</div>
+							<div id="el-collapse-content-4571" class="el-collapse-item__wrap" role="tabpanel"
+								aria-hidden="true" aria-labelledby="el-collapse-head-4571" style="display: none;">
+								<div class="el-collapse-item__content">
+									<div class="" data-v-1833d007=""><a href="/privacy-agreement" class=""
+											data-v-1833d007="">
+											<div class="h30 lh30" data-v-1833d007="">Política de Privacidade</div>
+										</a><a href="/service-agreement" class="" data-v-1833d007="">
+											<div class="h30 lh30" data-v-1833d007="">Termos de Serviço</div>
+										</a><a href="/link-adult" class="" data-v-1833d007="">
+											<div class="h30 lh30" data-v-1833d007="">Jogo responsável</div>
+										</a><a href="/feedback" class="" data-v-1833d007="">
+											<div class="h30 lh30" data-v-1833d007="">Feedback de informações</div>
+										</a><a href="/vip-desc" class="" data-v-1833d007="">
+											<div class="h30 lh30" data-v-1833d007="">Descrição do nível VIP</div>
+										</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pl35 pr35 flex-a spa" data-v-1833d007="" style="flex-wrap: wrap;">
+						<div class="el-image w39 h39 ml10 mr10 mb10" data-v-1833d007=""><img
+								src="https://oss.resourceoss.com/game001/loan/163e8cd1ba8eb8.png"
+								class="el-image__inner"><!--v-if--><!--v-if--></div>
+						<div class="el-image w39 h39 ml10 mr10 mb10" data-v-1833d007=""><img
+								src="https://oss.resourceoss.com/game001/loan/263e8d2a7524a1.png"
+								class="el-image__inner"><!--v-if--><!--v-if--></div>
+						<div class="el-image w39 h39 ml10 mr10 mb10" data-v-1833d007=""><img
+								src="https://oss.resourceoss.com/game001/loan/863e8d2b215bd5.png"
+								class="el-image__inner"><!--v-if--><!--v-if--></div>
+						<div class="el-image w39 h39 ml10 mr10 mb10" data-v-1833d007=""><img
+								src="https://oss.resourceoss.com/game001/loan/863e8d2c87f602.png"
+								class="el-image__inner"><!--v-if--><!--v-if--></div>
+						<div class="el-image w39 h39 ml10 mr10 mb10" data-v-1833d007=""><img
+								src="https://oss.resourceoss.com/game001/loan/063e8d2db88981.png"
+								class="el-image__inner"><!--v-if--><!--v-if--></div>
+						<div class="el-image w39 h39 ml10 mr10 mb10" data-v-1833d007=""><img
+								src="https://oss.resourceoss.com/game001/loan/563e8d3218d1bc.png"
+								class="el-image__inner"><!--v-if--><!--v-if--></div>
+						<div class="el-image w39 h39 ml10 mr10 mb10" data-v-1833d007=""><img
+								src="https://oss.resourceoss.com/game001/loan/863e8d3017f59f.png"
+								class="el-image__inner"><!--v-if--><!--v-if--></div>
+						<div class="el-image w39 h39 ml10 mr10 mb10" data-v-1833d007=""><img
+								src="https://oss.resourceoss.com/game001/loan/663e8d3090c779.png"
+								class="el-image__inner"><!--v-if--><!--v-if--></div>
+						<div class="el-image w39 h39 ml10 mr10 mb10" data-v-1833d007=""><img
+								src="https://oss.resourceoss.com/game001/loan/863e8d31849a73.png"
+								class="el-image__inner"><!--v-if--><!--v-if--></div>
+						<div class="el-image w39 h39 ml10 mr10 mb10" data-v-1833d007=""><img
+								src="https://oss.resourceoss.com/game001/loan/063e8d31dd0194.png"
+								class="el-image__inner"><!--v-if--><!--v-if--></div>
+					</div>
+					<div class="desc pall15" data-v-1833d007=""> é um cassino online especialmente desenvolvido para o
+						mercado sul-americano. Todas as suas apostas são absolutamente justas e justas. A empresa está
+						aberta apenas para usuários com mais de 18 anos. Não somos responsáveis por violar suas leis
+						locais em relação a jogos online. Espero que todos os jogadores possam dar nos mais sugestões,
+						atualizaremos o cassino de acordo com o favorito de todos os usuários! </div>
+					<div class="more-img ta mt10 pl10 pr10" data-v-1833d007="" style="width: 100%;">
+						<div class="el-image gm-image" data-v-1833d007=""><img
+								src="https://oss.resourceoss.com/game001/loan/963e73a9052f47.png"
+								class="el-image__inner" style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+					</div>
+				</div>
+				
+				
+				
+				<div class="tab-bar-wrap showtabbar" data-v-66175f60="" data-v-1dbc0f80="">
+					<div class="fixed-placeholder" data-v-66175f60="">&nbsp;</div>
+					<div class="tab-bar fs10" data-v-66175f60="">
+						<div class="inner-wrap" data-v-66175f60="">
+						    
+						    
+							<a href="{:url('index/index/index')}" class="tab-item" data-v-66175f60="">
+								<div class="el-image icon gm-image icon" data-v-66175f60=""><img
+										src="https://oss.resourceoss.com/game001/loan/16400a38f22950.png"
+										class="el-image__inner" style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+								<p data-v-66175f60="">Jogos</p>
+							</a>
+							
+							
+							<a href="{:url('index/index/invitereward')}" class="tab-item" data-v-66175f60="">
+								<div class="el-image icon gm-image icon" data-v-66175f60=""><img
+										src="https://oss.resourceoss.com/game001/loan/86400ab49b757f.png"
+										class="el-image__inner" style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+								<p data-v-66175f60="">Convidar</p>
+							</a>
+							
+						
+						  <a href="{$chat}" class="tab-item" data-v-66175f60="">
+								<div class="el-image icon gm-image icon" data-v-66175f60=""><img
+										src="https://oss.resourceoss.com/game001/loan/36400aaba50627.png"
+										class="el-image__inner" style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+								<p data-v-66175f60="">Consultar</p>
+							</a>
+							
+							<a href="{:url('index/index/my')}" class="router-link-active router-link-exact-active tab-item active"
+								data-v-66175f60="" aria-current="page">
+								<div class="el-image icon gm-image icon" data-v-66175f60=""><img
+										src="https://oss.resourceoss.com/game001/loan/36400ab2228bc0.png"
+										class="el-image__inner" style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+								<p data-v-66175f60="">Minha</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div data-v-1dbc0f80="">
+					<div><audio preload="auto">
+							<source src="https://oss.resourceoss.com/game001/loan/363c27b93eb1a3.mp3" type="audio/mpeg">
+						</audio><audio preload="auto">
+							<source src="https://oss.resourceoss.com/game001/loan/963c27ab8dd206.mp3" type="audio/mpeg">
+						</audio><audio preload="auto">
+							<source src="https://oss.resourceoss.com/game001/loan/663c27af30f767.mp3" type="audio/mpeg">
+						</audio></div>
+				</div>
+				
+				
+			</div>
+		</div>
+
+		<script nomodule="">
+			! function() {
+				var e = document,
+					t = e.createElement("script");
+				if (!("noModule" in t) && "onbeforeload" in t) {
+					var n = !1;
+					e.addEventListener("beforeload", (function(e) {
+						if (e.target === t) n = !0;
+						else if (!e.target.hasAttribute("nomodule") || !n) return;
+						e.preventDefault()
+					}), !0), t.type = "module", t.src = ".", e.head.appendChild(t), t.remove()
+				}
+			}();
+		</script>
+		<script nomodule="" crossorigin="" id="vite-legacy-polyfill" src="__CDN__/assets/pubnew/polyfills-legacy.c8b1d8bf.js">
+		</script>
+		<script nomodule="" crossorigin="" id="vite-legacy-entry" data-src="__CDN__/assets/pubnew/index-legacy.091cddff.js">
+			System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))
+		</script>
+		
+		
+		<script>
+		    
+		    
+		    
+		    
+        var token = localStorage.getItem('token');
+        
+        loginstatus();
+        
+        function loginstatus(){
+            
+            // https://77vipgame.com/api/user/getUserinfo
+            
+            $.ajax({
+                url: "{:url('/api/user/getUserinfo')}",
+                method: 'POST',
+                dataType: 'json',
+                data: {
+                    token: token,
+                },
+                success: function (response) {
+                    
+                    console.log(JSON.stringify(response.data));
+                    
+                    // // 请求成功，处理响应数据
+                    if (response.code == 1) {
+                        
+                        localStorage.setItem('token', response.data.token);
+                        localStorage.setItem('userinfo', response.data);
+                        localStorage.setItem('nickname', response.data.nickname);
+                        localStorage.setItem('user_id', response.data.user_id);
+                        
+                        
+                        $('#userinfomoney').text(response.data.money);
+                        $('#userinfonickname').text(response.data.nickname);
+                        $('#userinfoid').text('ID: '+ response.data.user_id);
+                        
+                        
+                        $('.usedmoney1').text(response.data.money);
+                        $('.usedmoney2').text(response.data.money);
+                        
+                        
+                        getmoneylist();
+                        
+                        // 获取金额
+                        
+                        
+                        
+                        // userinfomoney
+                        
+                        // $('#login-btn').hide();
+
+                    } else {
+                       window.location.href="{:url('/index/index/index')}";
+                    }
+                },
+                error: function (xhr, status, error) {
+                   window.location.href="{:url('/index/index/index')}";
+                }
+            });
+            
+            
+        }
+        
+       
+        function getmoneylist(){
+            $.ajax({
+                url: "{:url('/api/index/money_info')}",
+                method: 'POST',
+                dataType: 'json',
+                data: {
+                    token: token,
+                },
+                success: function (response) {
+                    
+                    console.log(JSON.stringify(response.data));
+                    
+                    // // 请求成功，处理响应数据
+                    if (response.code == 1) {
+                       
+                        $('#ag').text(response.data.ag);
+                        $('#jdb').text(response.data.jdb);
+                        $('#pp').text(response.data.pp);
+                        $('#pg').text(response.data.pg);
+                        $('#cq9').text(response.data.cq9);
+                        
+                    } else {
+                        window.location.href="{:url('/index/index/index')}";
+                    }
+                },
+                error: function (xhr, status, error) {
+                     window.location.href="{:url('/index/index/index')}";
+                }
+            });
+        }
+        
+        
+        function get_index(e){
+            
+            // if(e == 1){
+            //     var tas = $(".qipa_select1").val();
+            //     var usedmoney =  $('#'+tas).text();
+            //     $('.usedmoney1').text(usedmoney);
+                
+            // }else{
+            //     var tas = $(".qipa_select2").val();
+            //     var usedmoney =  $('#'+tas).text();
+            //     $('.usedmoney2').text(usedmoney);
+            // }
+            
+        }
+
+		
+		
+  
+        //i为下标
+        //n为元素本身
+        function switchtab(e){
+            
+            if(e == 1){
+                $('#tab3').show();
+            }else{
+                $('#tab4').show();
+            }
+            // 默认AG
+            // var usedmoney =  $('#ag').text();
+            // $('.usedmoney1').text(usedmoney);
+            // $('.usedmoney2').text(usedmoney);
+            
+        }
+        
+        function iconclose(e){
+            $('.el-overlay').hide();
+        }
+        
+        
+        
+        function gametrans(e){
+            // 1:转入、2:转出
+           
+            var status = e;
+            
+            if(e == 1){
+                var plat_type = $(".qipa_select1").val();
+                var money = $(".playmoney1").val();
+                var usedmoney = $(".usedmoney1").text();
+            }else{
+                var plat_type = $(".qipa_select2").val();
+                var money = $(".playmoney2").val();
+                var usedmoney = $(".usedmoney2").text();
+            }
+        
+            
+            console.log(money);
+            console.log(usedmoney);
+            
+            
+            if (!money || Number(money) < 0) {
+                Toastify({
+                    text: '请输入正确的金额',
+                    duration: 1000,
+                    close: false,
+                    gravity: 'bottom',
+                    position: 'center',
+                    className: 'custom-toast', // 添加自定义类名
+                    // backgroundColor: 'linear-gradient(to right, #00b09b, #96c93d)',
+                    stopOnFocus: true
+                }).showToast();
+                return false;
+            }
+            
+            if(Number(money) > Number(usedmoney)){
+                Toastify({
+                    text: '可用金额不足',
+                    duration: 1000,
+                    close: false,
+                    gravity: 'bottom',
+                    position: 'center',
+                    className: 'custom-toast', // 添加自定义类名
+                    // backgroundColor: 'linear-gradient(to right, #00b09b, #96c93d)',
+                    stopOnFocus: true
+                }).showToast();
+                return false;
+            }
+            
+            
+            $.ajax({
+                    url: "{:url('/api/index/game_trans')}",
+                    method: 'POST',
+                    dataType: 'json',
+                    data: {
+                        token: token,
+                        plat_type:plat_type,
+                        status:status,
+                        money:money
+                    },
+                    success: function (response) {
+                        
+                        console.log(JSON.stringify(response.data));
+                        
+                        // // 请求成功，处理响应数据
+                        if (response.code == 1) {
+                            
+                            location.reload();
+                            
+                        } else {
+                            
+                            Toastify({
+                                text: response.msg,
+                                duration: 1000,
+                                close: false,
+                                gravity: 'bottom',
+                                position: 'center',
+                                className: 'custom-toast', // 添加自定义类名
+                                // backgroundColor: 'linear-gradient(to right, #00b09b, #96c93d)',
+                                stopOnFocus: true
+                            }).showToast();
+                            return false;
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        loginbtn();
+                    }
+                });
+            
+        }
+        
+        
+        
+        </script>
+		
+
+
+		<div class="el-overlay" style="z-index: 2002; display: none;">
+			<div role="dialog" aria-modal="true" aria-labelledby="el-id-5214-2" aria-describedby="el-id-5214-3"
+				class="el-overlay-dialog"></div>
+		</div>
+		<div class="el-overlay" style="z-index: 2040; display: none;">
+			<div role="dialog" aria-modal="true" aria-labelledby="el-id-5214-8" aria-describedby="el-id-5214-9"
+				class="el-overlay-dialog"></div>
+		</div>
+		<div class="el-overlay" style="z-index: 2022; display: none;">
+			<div role="dialog" aria-modal="true" aria-labelledby="el-id-5214-10" aria-describedby="el-id-5214-11"
+				class="el-overlay-dialog"></div>
+		</div>
+		<div class="el-overlay" style="z-index: 2024; display: none;">
+			<div role="dialog" aria-modal="true" aria-labelledby="el-id-5214-66" aria-describedby="el-id-5214-67"
+				class="el-overlay-dialog"></div>
+		</div>
+		
+		<div class="el-overlay" id="tab3" style="z-index: 2027;display:none"><div role="dialog" aria-modal="true" aria-labelledby="el-id-1242-20" aria-describedby="el-id-1242-21" class="el-overlay-dialog"><div class="el-dialog custom-dialog-wrap" tabindex="-1"><header class="el-dialog__header"><span role="heading" class="el-dialog__title"></span><button aria-label="Close this dialog" class="el-dialog__headerbtn" type="button"><i class="el-icon el-dialog__close"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"></path></svg></i></button></header><div id="el-id-1242-21" class="el-dialog__body"><div class="ta bus-tipmodal" data-v-358586b5=""> 
+	
+		    <!--<img src="https://oss.resourceoss.com/game001/loan/964033ea39edd2.png" alt="" class="w300" data-v-358586b5="">-->
+		    
+		    <div style="margin: auto;
+                        height: 10rem;
+                        border-radius: 10px;
+                        background: #000000;
+                        border: 1px solid #ffffff;" class="w300">
+		        
+		        
+		        <div class="header" style="height: 40px;
+                                            line-height: 40px;
+                                            border-bottom: 1px solid #ffffff;
+                                            font-size: 18px;" id="header">
+		            转入
+		        </div>
+		        
+		        <div>
+		          
+		            <div class="header" style="height: 50px;
+                                                line-height: 50px;
+                                                text-align: left;
+                                                margin: 0 10px;">
+    		            平台选择:
+    		        </div>
+		            <!--pg  ag cq9 jdb pp-->
+		            <select name="selectList" style="width: 93%;
+    margin: 0 10px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    " onchange="get_index(1)" id="qipa_select1" class="qipa_select1">
+                         <option value="ag" selected="checked">AG</option>
+                         <option value="cq9">CQ9</option>
+                         <option value="jdb">JDB</option>
+                         <option value="pg">PG</option>
+                         <option value="pp">PP</option>
+                      </select>
+		        </div>
+		        
+		        
+		        <div>
+		            <div class="header" style="height: 50px;
+                                                line-height: 50px;
+                                                text-align: left;
+                                                margin: 0 10px;">
+    		            转入金额:
+    		        </div>
+		            
+		            <input type="number" name="" placeholder="请输入金额" id="playmoney1" class="playmoney1" value="" style="width: 93%;
+    margin: 0 10px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    " />
+		        </div>
+		        
+		        
+		        <div>
+		            <div class="header" style="height: 50px;
+                                                line-height: 50px;
+                                                text-align: left;
+                                                margin: 0 10px;">
+    		            可用余额: <span class="usedmoney1">0.00</span>
+    		        </div>
+		          
+		        </div>
+		        
+		        
+		        
+		        <div class="flex-a" id="login-btn" style="display:block;padding-top: 30px;margin: 0 10px">
+                    <button class="el-button el-button--small login-btn"
+                        onclick="gametrans(1)" aria-disabled="false" type="button" style="height: 40px;
+    border-radius: 50px;
+    width: 100%;">
+                        <!--v-if--><span class=""> 提交
+                        </span>
+
+                    </button>
+                </div>
+		        
+		        
+		    </div>
+		    
+		    
+		    
+		    <div class="icon-close" data-v-358586b5="" style="padding-top: 1rem;"><img id="icon-close" onclick="iconclose()" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAeFBMVEUAAADW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tZuvx9+AAAAJ3RSTlMAqKPs9REKv5G1rEUYyn93cVYG8NbGlYpMMy8nmcwk5NyEZ2JePmoYpsmRAAACEUlEQVRIx6VX63qDIAyNt4L1UqvVrtV2l154/zfcF9GpASod58dWEw6EJIQABkTJjfvbON76/JZE8AZOOavEDBXLT3bMTZEJDbJis07NA2FAkK/Q75+zwRcWx+wym+zz/oKaxuOwQ7NvN4Mt7b45jPI4NXE/gmFJ/qCqBx91H3rublDvIm3sdgN9p9M2UtdFxtB3ckSjqji1yrwvTuWFDGYKL5HKFCiW0qQX1iWsoKwFIllsJ0QRAwswHBlGVJKBFTKyzn6aTQ/Vyv3fRiq5DzNU/1Sje3L88sEaPo7Ph+QN0ejNLCCtSjif8a9KKEjSPUPhaxbrSCLLYB+WC6eo2S65W5Sdl0sfeoNIxrWCsJG7JAMfv7/xx4n6Q3iTwBPUoycUfAMAJtyXauTE9lRT4AuTGWOunjJPspWPCY3MqmTKF8VQugmSkwn84L8r6NkmLlxR+tM7LihBzz4e9VwoAwxRPyoz5aCEbzhbXu9aZsxgY9azPgAxVmPQ4Si5R51O0pzITmY7OcwpVE5J4pSe8mDwdw8GH8ot+++RZG7FQC1DV1MZuqplyL4AprQA2pfe8ElL7zRPtVL021Qp+i7XjdNF53zFTpf7pbThlhccy5TZahtyrVqZCMumhE0NDW3/6rVWqtY3gY1VE2dsAW3bR65TFnaNa+HSMls06928We9Is+7wTHB6oLg/jdwfZU7PwV9YUo51eq/zwgAAAABJRU5ErkJggg==" alt="" data-v-358586b5="">
+		    
+		    </div></div></div><!--v-if--></div></div></div>
+		
+		
+		
+		<div class="el-overlay" id="tab4" style="z-index: 2027;display:none"><div role="dialog" aria-modal="true" aria-labelledby="el-id-1242-20" aria-describedby="el-id-1242-21" class="el-overlay-dialog"><div class="el-dialog custom-dialog-wrap" tabindex="-1"><header class="el-dialog__header"><span role="heading" class="el-dialog__title"></span><button aria-label="Close this dialog" class="el-dialog__headerbtn" type="button"><i class="el-icon el-dialog__close"><svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"></path></svg></i></button></header><div id="el-id-1242-21" class="el-dialog__body"><div class="ta bus-tipmodal" data-v-358586b5=""> 
+	
+		    <!--<img src="https://oss.resourceoss.com/game001/loan/964033ea39edd2.png" alt="" class="w300" data-v-358586b5="">-->
+		    
+		    <div style="margin: auto;
+                        height: 10rem;
+                        border-radius: 10px;
+                        background: #000000;
+                        border: 1px solid #ffffff;" class="w300">
+		        
+		        
+		        <div class="header" style="height: 40px;
+                                            line-height: 40px;
+                                            border-bottom: 1px solid #ffffff;
+                                            font-size: 18px;" id="header">
+		            转出
+		        </div>
+		        
+		        <div>
+		          
+		            <div class="header" style="height: 50px;
+                                                line-height: 50px;
+                                                text-align: left;
+                                                margin: 0 10px;">
+    		            平台选择:
+    		        </div>
+		            <!--pg  ag cq9 jdb pp-->
+		            <select name="selectList" style="width: 93%;
+    margin: 0 10px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    " onchange="get_index(2)" id="qipa_select2" class="qipa_select2">
+                         <option value="ag" selected="checked">AG</option>
+                         <option value="cq9">CQ9</option>
+                         <option value="jdb">JDB</option>
+                         <option value="pg">PG</option>
+                         <option value="pp">PP</option>
+                      </select>
+		        </div>
+		        
+		        
+		        <div>
+		            <div class="header" style="height: 50px;
+                                                line-height: 50px;
+                                                text-align: left;
+                                                margin: 0 10px;">
+    		            转出金额:
+    		        </div>
+		            
+		            <input type="number" name="" placeholder="请输入金额" id="playmoney2" class="playmoney2" value="" style="width: 93%;
+    margin: 0 10px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    " />
+		        </div>
+		        
+		        
+		        <div>
+		            <div class="header" style="height: 50px;
+                                                line-height: 50px;
+                                                text-align: left;
+                                                margin: 0 10px;">
+    		            可用余额: <span class="usedmoney2">0.00</span>
+    		        </div>
+		          
+		        </div>
+		        
+		        
+		        
+		        <div class="flex-a" id="login-btn" style="display:block;padding-top: 30px;margin: 0 10px">
+                    <button class="el-button el-button--small login-btn"
+                        onclick="gametrans(2)" aria-disabled="false" type="button" style="height: 40px;
+    border-radius: 50px;
+    width: 100%;">
+                        <!--v-if--><span class=""> 提交
+                        </span>
+
+                    </button>
+                </div>
+		        
+		        
+		    </div>
+		    
+		    
+		    
+		    <div class="icon-close" data-v-358586b5="" style="padding-top: 1rem;"><img id="icon-close" onclick="iconclose()" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAeFBMVEUAAADW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tbW1tZuvx9+AAAAJ3RSTlMAqKPs9REKv5G1rEUYyn93cVYG8NbGlYpMMy8nmcwk5NyEZ2JePmoYpsmRAAACEUlEQVRIx6VX63qDIAyNt4L1UqvVrtV2l154/zfcF9GpASod58dWEw6EJIQABkTJjfvbON76/JZE8AZOOavEDBXLT3bMTZEJDbJis07NA2FAkK/Q75+zwRcWx+wym+zz/oKaxuOwQ7NvN4Mt7b45jPI4NXE/gmFJ/qCqBx91H3rublDvIm3sdgN9p9M2UtdFxtB3ckSjqji1yrwvTuWFDGYKL5HKFCiW0qQX1iWsoKwFIllsJ0QRAwswHBlGVJKBFTKyzn6aTQ/Vyv3fRiq5DzNU/1Sje3L88sEaPo7Ph+QN0ejNLCCtSjif8a9KKEjSPUPhaxbrSCLLYB+WC6eo2S65W5Sdl0sfeoNIxrWCsJG7JAMfv7/xx4n6Q3iTwBPUoycUfAMAJtyXauTE9lRT4AuTGWOunjJPspWPCY3MqmTKF8VQugmSkwn84L8r6NkmLlxR+tM7LihBzz4e9VwoAwxRPyoz5aCEbzhbXu9aZsxgY9azPgAxVmPQ4Si5R51O0pzITmY7OcwpVE5J4pSe8mDwdw8GH8ot+++RZG7FQC1DV1MZuqplyL4AprQA2pfe8ElL7zRPtVL021Qp+i7XjdNF53zFTpf7pbThlhccy5TZahtyrVqZCMumhE0NDW3/6rVWqtY3gY1VE2dsAW3bR65TFnaNa+HSMls06928We9Is+7wTHB6oLg/jdwfZU7PwV9YUo51eq/zwgAAAABJRU5ErkJggg==" alt="" data-v-358586b5="">
+		    
+		    </div></div></div><!--v-if--></div></div></div>
+		
+		
+		<div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate"
+			style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;"
+			data-id="">
+			<div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd">
+				<div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c"><img
+						src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24"
+						alt=""></div>
+				<div class=" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c">
+					<div class="VIpgJd-yAWNEb-hvhgNd-IuizWc" dir="ltr">原文</div>
+					<div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div>
+				</div>
+				<div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr">
+					<div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr">
+						<div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">请对此翻译评分</div>
+						<div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">您的反馈将用于改进谷歌翻译</div>
+					</div>
+					<div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button"
+							class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="翻译质量很棒" aria-label="翻译质量很棒"
+							aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24"
+									viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+									<path
+										d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z">
+									</path>
+								</svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24"
+									viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+									<path
+										d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z">
+									</path>
+								</svg></span></button><button id="goog-gt-thumbDownButton" type="button"
+							class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="翻译质量很差" aria-label="翻译质量很差"
+							aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24"
+									viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+									<path
+										d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z">
+									</path>
+								</svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24"
+									viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M">
+									<path
+										d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z">
+									</path>
+								</svg></span></button></div>
+				</div>
+				<div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce">
+					<form id="goog-gt-votingForm" action="//translate.googleapis.com/translate_voting?client=te_lib"
+						method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text"
+							name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl"
+							id="goog-gt-votingInputTrgLang"><input type="text" name="query"
+							id="goog-gt-votingInputSrcText"><input type="text" name="gtrans"
+							id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote">
+					</form><iframe name="votingFrame" frameborder="0"></iframe>
+				</div>
+			</div>
+		</div>
+		<div data-v-app=""></div><!---->
+		<div class="van-popup van-popup--center van-toast van-toast--middle van-toast--loading van-fade-enter-to"
+			style="z-index: 2001; display: none;">
+			<div class="van-loading van-loading--circular van-toast__loading" aria-live="polite" aria-busy="true"><span
+					class="van-loading__spinner van-loading__spinner--circular"><svg class="van-loading__circular"
+						viewBox="25 25 50 50">
+						<circle cx="50" cy="50" r="20" fill="none"></circle>
+					</svg></span><!----></div><!----><!---->
+		</div>
+	</body>
+</html>

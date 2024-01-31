@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>个人详情</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  h1, h2 {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  p {
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  .buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .button:hover {
+    background-color: #ff5500;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>个人详情</h1>
+
+  <div class="details">
+    <p><strong>ID:</strong> {$row.id}</p>
+    <p><strong>父级id:</strong> {$row.pid}</p>
+    <p><strong>账户余额:</strong> {$row.money} </p>
+    <p><strong>累计充值:</strong>  {$row.cz} </p>
+    <p><strong>累计提现:</strong> {$row.tx}  </p>
+    <p><strong>总投注:</strong> {$row.xz}  </p>
+    <p><strong>直推人数:</strong> {$row.pushnum}</p>
+    <p><strong>会员等级:</strong> VIP{$row.level}</p>
+    <p><strong>手机:</strong> {$row.mobile}</p>
+    <p><strong>邮箱:</strong> {$row.email}</p>
+    <p><strong>上次登录时间:</strong> {$row.prevtime|date='Y-m-d H:i:s',###}</p>
+    <p><strong>登录时间:</strong> {$row.logintime|date='Y-m-d H:i:s',###}</p>
+    <p><strong>登录ip:</strong> {$row.loginip}</p>
+    <p><strong>加入ip:</strong> {$row.joinip}</p>
+    <p><strong>加入时间:</strong> {$row.jointime|date='Y-m-d H:i:s',###}</p>
+    <p><strong>注册时间:</strong> {$row.createtime|date='Y-m-d H:i:s',###}</p>
+    <p><strong>更新时间:</strong> {$row.updatetime|date='Y-m-d H:i:s',###}</p>
+  </div>
+
+  <div class="buttons">
+    <a href="/NHujKZCbMg.php/mx/index?uid={$row.id}" class="button">资金明细</a>
+    <a href="/NHujKZCbMg.php/gamerecord/index?uid={$row.id}"  class="button">下单记录</a>
+    <a href="/NHujKZCbMg.php/users?uid={$row.id}"  class="button">邀请记录</a>
+  </div>
+
+</div>
+
+</body>
+</html>

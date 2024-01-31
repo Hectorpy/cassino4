@@ -1,0 +1,39 @@
+.game-item-loading-wrap[data-v-98b4f2a6] {
+    display:block;
+    position:relative;
+    width:100%
+}
+.game-item-loading-wrap[data-v-98b4f2a6]:after {
+    display:block;
+    content:"";
+    width:100%;
+    padding-top:132%
+}
+.game-item-loading-wrap .game-img[data-v-98b4f2a6] {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    border-radius:8px
+}
+.game-item-wrap[data-v-98b4f2a6] {
+    display:block;
+    width:100%
+}
+.game-item-wrap .game-img[data-v-98b4f2a6] {
+    border-radius:8px;
+    position:relative;
+    display:block
+}
+.game-item-wrap .game-img[data-v-98b4f2a6]:hover:before {
+    content:"";
+    background:url(https://oss.resourceoss.com/game001/loan/863e8904db5c57.png) no-repeat;
+    background-size:100% 100%;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:2;
+    width:calc(100% + 1px);
+    height:calc(100% + 1px)
+}

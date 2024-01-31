@@ -1,0 +1,38 @@
+@import "@/static/scss/colorui.css";
+@import "@/uni_modules/uview-ui/index.scss";
+
+body,
+html{
+	background-color: #1d1f2c;
+}
+
+.border_shadow{
+	box-shadow: 0 1px rgba(255,255,255,.1) inset, 0 10rpx 8rpx rgba(0,0,0,.3);
+}
+
+.d_border12{
+	border-radius: 12rpx;
+}
+
+.d_global_bgColor {
+	background-color: #1d1f2c;
+}
+
+
+.d_bgColor {
+	background-color: #2e3142;
+}
+
+.d_flex{
+	display: flex;
+}
+
+.d_ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.uni-input-input{
+	color: #fff !important;
+}

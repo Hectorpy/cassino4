@@ -1,0 +1,544 @@
+<html lang="en" class="dark hairlines" style="font-size: 39px;">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="icon" href="https://oss.resourceoss.com/game001/loan/764060a585b000.png">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#da532c">
+		<link rel="apple-touch-icon" sizes="114x114" href="https://oss.resourceoss.com/game001/loan/96404778f0e83f.png">
+		<link rel="apple-touch-startup-image" href="https://oss.resourceoss.com/game001/loan/96404778f0e83f.png">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#131521">
+		<title>99VIP</title>
+		<style></style>
+		<script type="text/javascript" async=""
+			src="https://s1.kwai.net/kos/s101/nlav11187/pixel/events.js?sdkid=399012253414732194&amp;lib=kwaiq">
+		</script>
+		<script type="text/javascript" src="https://unpkg.com/@dcloudio/uni-webview-js@0.0.3/index.js"></script>
+
+		<!-- rem layout -->
+		<script>
+			;
+			(function flexible(window, document) {
+				var docEl = document.documentElement
+				var dpr = window.devicePixelRatio || 1
+
+				// adjust body font size
+				function setBodyFontSize() {
+					if (document.body) {
+						document.body.style.fontSize = 12 * dpr + 'px'
+					} else {
+						document.addEventListener('DOMContentLoaded', setBodyFontSize)
+					}
+				}
+				setBodyFontSize()
+
+				// set 1rem = viewWidth / 10
+				function setRemUnit() {
+					var rem = docEl.clientWidth / 10
+					docEl.style.fontSize = rem + 'px'
+				}
+
+				setRemUnit()
+
+				// reset rem unit on page resize
+				window.addEventListener('resize', setRemUnit)
+				window.addEventListener('pageshow', function(e) {
+					if (e.persisted) {
+						setRemUnit()
+					}
+				})
+
+				// detect 0.5px supports
+				if (dpr >= 2) {
+					var fakeBody = document.createElement('body')
+					var testElement = document.createElement('div')
+					testElement.style.border = '.5px solid transparent'
+					fakeBody.appendChild(testElement)
+					docEl.appendChild(fakeBody)
+					if (testElement.offsetHeight === 1) {
+						docEl.classList.add('hairlines')
+					}
+					docEl.removeChild(fakeBody)
+				}
+
+				function deviceType(options) {
+					options = {}
+					var isMobile = false
+					if (
+						navigator.userAgent.match(
+							/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+						)
+					) {
+						options.mobile && options.mobile()
+						isMobile = true
+					} else {
+						options.pc && options.pc()
+					}
+					return isMobile
+				}
+				// if (!deviceType() && document.documentElement.clientWidth > 1000) {
+				//   document.getElementsByTagName("html")[0].setAttribute("class", "pc-style");
+				// }
+			})(window, document)
+		</script>
+
+		<script>
+			var isSafari =
+				/Safari/.test(navigator.userAgent) &&
+				!/Chrome/.test(navigator.userAgent)
+			if (isSafari) {
+				let lastTouchEnd = 0 //
+				document.addEventListener('touchstart', function(event) {
+					if (event.touches.length > 1) {
+						event.preventDefault()
+					}
+				})
+				document.addEventListener(
+					'touchend',
+					function(event) {
+						let now = new Date().getTime()
+						if (now - lastTouchEnd <= 500) {
+							event.preventDefault()
+						} else {
+							lastTouchEnd = now
+						}
+					},
+					false
+				)
+				document.addEventListener('gesturestart', function(event) {
+					event.preventDefault()
+				})
+				document.addEventListener('dblclick', function(event) {
+					event.preventDefault()
+				})
+			}
+		</script>
+
+		<!-- kwaiq -->
+		<script>
+			!(function(e, t) {
+				'object' == typeof exports && 'object' == typeof module ?
+					(module.exports = t()) :
+					'function' == typeof define && define.amd ?
+					define([], t) :
+					'object' == typeof exports ?
+					(exports.install = t()) :
+					(e.install = t())
+			})(window, function() {
+				return (function(e) {
+					var t = {}
+
+					function n(r) {
+						if (t[r]) return t[r].exports
+						var o = (t[r] = {
+							i: r,
+							l: !1,
+							exports: {}
+						})
+						return e[r].call(o.exports, o, o.exports, n), (o.l = !0), o.exports
+					}
+					return (
+						(n.m = e),
+						(n.c = t),
+						(n.d = function(e, t, r) {
+							n.o(e, t) ||
+								Object.defineProperty(e, t, {
+									enumerable: !0,
+									get: r
+								})
+						}),
+						(n.r = function(e) {
+							'undefined' != typeof Symbol &&
+								Symbol.toStringTag &&
+								Object.defineProperty(e, Symbol.toStringTag, {
+									value: 'Module'
+								}),
+								Object.defineProperty(e, '__esModule', {
+									value: !0
+								})
+						}),
+						(n.t = function(e, t) {
+							if ((1 & t && (e = n(e)), 8 & t)) return e
+							if (4 & t && 'object' == typeof e && e && e.__esModule) return e
+							var r = Object.create(null)
+							if (
+								(n.r(r),
+									Object.defineProperty(r, 'default', {
+										enumerable: !0,
+										value: e
+									}),
+									2 & t && 'string' != typeof e)
+							)
+								for (var o in e)
+									n.d(
+										r,
+										o,
+										function(t) {
+											return e[t]
+										}.bind(null, o)
+									)
+							return r
+						}),
+						(n.n = function(e) {
+							var t =
+								e && e.__esModule ?
+								function() {
+									return e.default
+								} :
+								function() {
+									return e
+								}
+							return n.d(t, 'a', t), t
+						}),
+						(n.o = function(e, t) {
+							return Object.prototype.hasOwnProperty.call(e, t)
+						}),
+						(n.p = ''),
+						n((n.s = 0))
+					)
+				})([
+					function(e, t, n) {
+						'use strict'
+						var r =
+							(this && this.__spreadArray) ||
+							function(e, t, n) {
+								if (n || 2 === arguments.length)
+									for (var r, o = 0, i = t.length; o < i; o++)
+										(!r && o in t) ||
+										(r || (r = Array.prototype.slice.call(t, 0, o)),
+											(r[o] = t[o]))
+								return e.concat(r || Array.prototype.slice.call(t))
+							}!(function(e) {
+								var t = window;
+								(t.KwaiAnalyticsObject = e), (t[e] = t[e] || [])
+								var n = t[e]
+								n.methods = [
+									'page',
+									'track',
+									'identify',
+									'instances',
+									'debug',
+									'on',
+									'off',
+									'once',
+									'ready',
+									'alias',
+									'group',
+									'enableCookie',
+									'disableCookie'
+								]
+								var o = function(e, t) {
+									e[t] = function() {
+										var n = Array.from(arguments),
+											o = r([t], n, !0)
+										e.push(o)
+									}
+								}
+								n.methods.forEach(function(e) {
+										o(n, e)
+									}),
+									(n.instance = function(e) {
+										var t = n._i[e] || []
+										return (
+											n.methods.forEach(function(e) {
+												o(t, e)
+											}),
+											t
+										)
+									}),
+									(n.load = function(t, r) {
+										;
+										(n._i = n._i || {}),
+										(n._i[t] = []),
+										(n._i[t]._u =
+											'https://s1.kwai.net/kos/s101/nlav11187/pixel/events.js'),
+										(n._t = n._t || {}),
+										(n._t[t] = +new Date()),
+										(n._o = n._o || {}),
+										(n._o[t] = r || {})
+										var o = document.createElement('script');
+										(o.type = 'text/javascript'),
+										(o.async = !0),
+										(o.src =
+											'https://s1.kwai.net/kos/s101/nlav11187/pixel/events.js?sdkid=' +
+											t +
+											'&lib=' +
+											e)
+										var i = document.getElementsByTagName('script')[0]
+										i.parentNode.insertBefore(o, i)
+									})
+							})('kwaiq')
+					}
+				])
+			})
+		</script>
+		<script>
+			kwaiq.load('399012253414732194')
+			kwaiq.page()
+		</script>
+
+		<style>
+			.pc-style {
+				font-size: 54px !important;
+				max-width: 540px;
+				margin: 0px auto;
+				background: #f5f5f5 !important;
+			}
+
+			.app-loading-wrap {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				height: 100vh;
+				background-color: #121725;
+				background-image: url(https://oss.resourceoss.com/game001/loan/0640477e8adfb5.gif);
+				background-size: 48% auto;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+		</style>
+		<!--<script type="module" crossorigin="" src="__CDN__/assets/pubnew/index.63484d31.js"></script>-->
+		<link rel="modulepreload" crossorigin="" href="__CDN__/assets/pubnew/bundle.d3169b93.js">
+		<link rel="modulepreload" crossorigin="" href="__CDN__/assets/pubnew/icons.ee65c48b.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/bundle.a7336069.css">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/index.bd921fe8.css">
+		<script type="module">
+			try {
+				import.meta.url;
+				import("_").catch(() => 1);
+			} catch (e) {}
+			window.__vite_is_modern_browser = true;
+		</script>
+		<script type="module">
+			! function() {
+				if (window.__vite_is_modern_browser) return;
+				console.warn(
+					"vite: loading legacy build because dynamic import or import.meta.url is unsupported, syntax error above should be ignored"
+					);
+				var e = document.getElementById("vite-legacy-polyfill"),
+					n = document.createElement("script");
+				n.src = e.src, n.onload = function() {
+					System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))
+				}, document.body.appendChild(n)
+			}();
+		</script>
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Mine.fd2bf6ed.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/Mine.ee162df7.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Audios.07b47c7e.js">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Audios.d5459051.js">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/store.3a5bf4f7.js">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/index.63484d31.js">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Setting.addde303.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/Setting.26b5c406.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/BackIcon.0c3788dd.js">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Chat.aebe4480.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/Chat.049ed8a0.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Activity.c238b329.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/Activity.dcd33df2.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/BlogerShare.5c77f212.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/BlogerShare.0c0b7f7d.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/BetRank.d27ebade.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/BetRank.b3d34c51.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/NewRechargeIntro.ebcb83dd.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/NewRechargeIntro.b59f5b96.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/RechargeRewardIntro.e6e01040.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/RechargeRewardIntro.bb748397.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/GameBetReward.b1ef225f.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/GameBetReward.38f17310.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/GameCard.5347132d.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/GameCard.8c4a1a11.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/GameDetail.6f0b8494.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/GameDetail.c52405b4.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/common.32a54c00.js">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Double.2c57781d.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/Double.bcdc5545.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Home.cbb4b96f.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/Home.c5f21993.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/pay.46ebe093.js">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Message.c5c48d95.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/Message.ada2a5e7.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/message.3949021a.js">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/detail.67c74a01.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/detail.f821a184.css">
+	</head>
+	<body style="font-size: 36px;" class="">
+		<div id="app" data-v-app="">
+			<div class="app-wrapper" data-v-1dbc0f80="">
+				<div class="nav-bar-wrap" id="" data-v-1dbc0f80="" style="display: none;">
+					<div class="fixed-placeholder">&nbsp;</div>
+					<div class="nav-bar">
+						<div class="header pr10">
+							<div class="flex-a left pl15 w180">
+								<div class="el-image h18 w20 gm-image h18 w20"><img 
+										src="https://oss.resourceoss.com/game001/loan/763d9ca8eeded7.png"
+										class="el-image__inner" style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+								<div class="b cfff lh14 ml8">
+									<div class="flex-a"><span class="fs14">Mover</span><span class="c-theme">Bet</span>
+									</div>
+									<div class="fs10">.com</div>
+								</div>
+							</div>
+							<div class="flex-a">
+								<div class="balance flex-a br5 h30">
+									<div class="flex-a">
+										<div class="h22 w22 pointer flex-a-j mr4"><img class="h18 218"
+												src="https://oss.resourceoss.com/game001/loan/4635d3150a966e.png"
+												alt=""></div><span>R$0</span>
+									</div><img src="https://oss.resourceoss.com/game001/loan/464009827c27a2.png" alt=""
+										class="w26 h26 ml10">
+								</div>
+								<div class="message-icon"><img
+										src="https://oss.resourceoss.com/game001/loan/26400984287e38.png" alt=""
+										class="w26 h26 ml6">
+									<div class="dot"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="el-overlay" style="z-index: 2001; display: none;">
+						<div aria-modal="true" aria-labelledby="el-id-82-0" aria-describedby="el-id-82-1"
+							class="el-drawer ltr home-menu-drawer" role="dialog" style="width: 30%;"><span
+								class="el-drawer__sr-focus" tabindex="-1"></span><!--v-if--><!--v-if--><!--v-if--></div>
+					</div>
+					<div class=""></div>
+				</div>
+				<div class="app-main" data-v-1dbc0f80="">
+					<div class="main" data-v-1dbc0f80=""><!---->
+						<div class="message-page-wrap" infinite-scroll-disabled="true" data-v-d561b5f2="">
+							<div class="nav-header" data-v-d561b5f2="">
+								<div class="el-image w26 h26 icon-back gm-image w26 h26 icon-back" data-v-d561b5f2=""
+									style="flex-shrink: 0;"><img onclick="goBack()"
+										src="https://oss.resourceoss.com/game001/loan/464009a8e29923.png"
+										class="el-image__inner" style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+								<b data-v-d561b5f2="">Centro de Notificaciones</b>
+							</div>
+							<div class="main-wrap mt20" data-v-d561b5f2="">
+							    
+							      {foreach name='msg'
+                                        item='pg1' }
+							    
+								<div class="row" data-v-d561b5f2="">
+									<div class="time" data-v-d561b5f2="">
+										<div class="date" data-v-d561b5f2="">{$pg1.addtime|date="Y-m-d H:i:s",###}</div>
+									</div>
+									<div class="card mt10" data-v-d561b5f2="">
+										<div class="pl10 pr10 pt10 pb10" data-v-d561b5f2="">
+											<div class="b title" data-v-d561b5f2="">{$pg1.title}</div>
+											<div class="content mt4" data-v-d561b5f2="">{$pg1.subtitle}</div>
+										</div>
+										<div class="linkto" data-v-d561b5f2=""><span data-v-d561b5f2="">Veja
+												detalhes</span><svg class="svg-icon vector-right" fill="currentColor"
+												width="8" height="12" viewBox="0 0 8 12"
+												xmlns="http://www.w3.org/2000/svg" data-v-d561b5f2="">
+												<path
+													d="M0.600147 6.0001L6.30015 0.300098C6.68675 -0.0865017 7.31355 -0.0865017 7.70015 0.300098C8.08675 0.686697 8.08675 1.3135 7.70015 1.7001L3.40015 6.0001L7.70015 10.3001C8.08675 10.6867 8.08675 11.3135 7.70015 11.7001C7.31355 12.0867 6.68675 12.0867 6.30015 11.7001L0.600147 6.0001Z">
+												</path>
+											</svg></div>
+									</div>
+								</div>
+								
+								   {/foreach}
+								
+								<div class="ta pall20" data-v-d561b5f2="">
+									<div data-v-d561b5f2="">sem mais dados</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!---->
+				<div class="tab-bar-wrap" data-v-66175f60="" data-v-1dbc0f80="">
+					<div class="fixed-placeholder" data-v-66175f60="">&nbsp;</div>
+					<div class="tab-bar fs10" data-v-66175f60="">
+						<div class="inner-wrap" data-v-66175f60="">
+							<div class="tab-item" data-v-66175f60="">
+								<div class="el-image icon gm-image icon" data-v-66175f60=""><img
+										src="https://oss.resourceoss.com/game001/loan/16400a38f22950.png"
+										class="el-image__inner" style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+								<p data-v-66175f60="">Jogos</p>
+							</div><a href="/invite-reward" class="tab-item" data-v-66175f60="">
+								<div class="el-image icon gm-image icon" data-v-66175f60=""><img
+										src="https://oss.resourceoss.com/game001/loan/86400ab49b757f.png"
+										class="el-image__inner" style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+								<p data-v-66175f60="">Convidar</p>
+							</a><a href="/activity" class="tab-item" data-v-66175f60="">
+								<div class="icon-wrap" data-v-66175f60="">
+									<div class="el-image icon gm-image icon" data-v-66175f60=""><img
+											src="https://oss.resourceoss.com/game001/loan/76400aae7cad19.png"
+											class="el-image__inner" style="object-fit: cover;"><!--v-if--><!--v-if-->
+									</div>
+								</div>
+								<p data-v-66175f60="">Bônus</p>
+							</a><a href="/chat" class="tab-item" data-v-66175f60="">
+								<div class="el-image icon gm-image icon" data-v-66175f60=""><img
+										src="https://oss.resourceoss.com/game001/loan/36400aaba50627.png"
+										class="el-image__inner" style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+								<p data-v-66175f60="">Consultar</p>
+							</a><a href="/mine" class="tab-item" data-v-66175f60="">
+								<div class="el-image icon gm-image icon" data-v-66175f60=""><img
+										src="https://oss.resourceoss.com/game001/loan/46400ab1122a66.png"
+										class="el-image__inner" style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+								<p data-v-66175f60="">Minha</p>
+							</a>
+						</div>
+					</div>
+				</div><!----><!----><!---->
+				<div data-v-1dbc0f80="">
+					<div><audio preload="auto">
+							<source src="https://oss.resourceoss.com/game001/loan/363c27b93eb1a3.mp3" type="audio/mpeg">
+						</audio><audio preload="auto">
+							<source src="https://oss.resourceoss.com/game001/loan/963c27ab8dd206.mp3" type="audio/mpeg">
+						</audio><audio preload="auto">
+							<source src="https://oss.resourceoss.com/game001/loan/663c27af30f767.mp3" type="audio/mpeg">
+						</audio></div>
+				</div>
+			</div>
+		</div>
+<script>
+    
+       
+          function goBack() {
+        window.history.back();
+    }
+</script>
+		<script nomodule="">
+			! function() {
+				var e = document,
+					t = e.createElement("script");
+				if (!("noModule" in t) && "onbeforeload" in t) {
+					var n = !1;
+					e.addEventListener("beforeload", (function(e) {
+						if (e.target === t) n = !0;
+						else if (!e.target.hasAttribute("nomodule") || !n) return;
+						e.preventDefault()
+					}), !0), t.type = "module", t.src = ".", e.head.appendChild(t), t.remove()
+				}
+			}();
+		</script>
+		<script nomodule="" crossorigin="" id="vite-legacy-polyfill" src="__CDN__/assets/pubnew/polyfills-legacy.c8b1d8bf.js">
+		</script>
+		<script nomodule="" crossorigin="" id="vite-legacy-entry" data-src="__CDN__/assets/pubnew/index-legacy.091cddff.js">
+			System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))
+		</script>
+
+
+		<div class="el-overlay" style="z-index: 2002; display: none;">
+			<div role="dialog" aria-modal="true" aria-labelledby="el-id-82-2" aria-describedby="el-id-82-3"
+				class="el-overlay-dialog"></div>
+		</div>
+		<div class="el-overlay" style="z-index: 2005; display: none;">
+			<div role="dialog" aria-modal="true" aria-labelledby="el-id-82-4" aria-describedby="el-id-82-5"
+				class="el-overlay-dialog"></div>
+		</div>
+		<div class="el-overlay" style="z-index: 2019; display: none;">
+			<div role="dialog" aria-modal="true" aria-labelledby="el-id-82-6" aria-describedby="el-id-82-7"
+				class="el-overlay-dialog"></div>
+		</div>
+		<div class="el-overlay" style="z-index: 2013; display: none;">
+			<div role="dialog" aria-modal="true" aria-labelledby="el-id-82-24" aria-describedby="el-id-82-25"
+				class="el-overlay-dialog"></div>
+		</div>
+	</body>
+</html>

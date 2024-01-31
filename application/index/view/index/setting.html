@@ -1,0 +1,588 @@
+<html lang="en" class="dark hairlines" style="font-size: 39px;">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="https://oss.resourceoss.com/game001/loan/764060a585b000.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#da532c">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://oss.resourceoss.com/game001/loan/96404778f0e83f.png">
+  <link rel="apple-touch-startup-image" href="https://oss.resourceoss.com/game001/loan/96404778f0e83f.png">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#131521">
+  <title>99VIP</title>
+  <style></style>
+  <script type="text/javascript" async=""
+    src="https://s1.kwai.net/kos/s101/nlav11187/pixel/events.js?sdkid=399012253414732194&amp;lib=kwaiq">
+    </script>
+  <!--<script type="text/javascript" src="https://unpkg.com/@dcloudio/uni-webview-js@0.0.3/index.js"></script>-->
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <style>
+    .custom-toast {
+      font-size: 15px;
+      /* 调整字体大小 */
+      border-radius: 8px;
+      /* 设置边缘圆润度 */
+    }
+
+    .bus-tipmodal .icon-close img {
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+  </style>
+
+  <!-- rem layout -->
+  <script>
+    ; (function flexible(window, document) {
+      var docEl = document.documentElement
+      var dpr = window.devicePixelRatio || 1
+
+      // adjust body font size
+      function setBodyFontSize() {
+        if (document.body) {
+          document.body.style.fontSize = 12 * dpr + 'px'
+        } else {
+          document.addEventListener('DOMContentLoaded', setBodyFontSize)
+        }
+      }
+      setBodyFontSize()
+
+      // set 1rem = viewWidth / 10
+      function setRemUnit() {
+        var rem = docEl.clientWidth / 10
+        docEl.style.fontSize = rem + 'px'
+      }
+
+      setRemUnit()
+
+      // reset rem unit on page resize
+      window.addEventListener('resize', setRemUnit)
+      window.addEventListener('pageshow', function (e) {
+        if (e.persisted) {
+          setRemUnit()
+        }
+      })
+
+      // detect 0.5px supports
+      if (dpr >= 2) {
+        var fakeBody = document.createElement('body')
+        var testElement = document.createElement('div')
+        testElement.style.border = '.5px solid transparent'
+        fakeBody.appendChild(testElement)
+        docEl.appendChild(fakeBody)
+        if (testElement.offsetHeight === 1) {
+          docEl.classList.add('hairlines')
+        }
+        docEl.removeChild(fakeBody)
+      }
+
+      function deviceType(options) {
+        options = {}
+        var isMobile = false
+        if (
+          navigator.userAgent.match(
+            /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+          )
+        ) {
+          options.mobile && options.mobile()
+          isMobile = true
+        } else {
+          options.pc && options.pc()
+        }
+        return isMobile
+      }
+      // if (!deviceType() && document.documentElement.clientWidth > 1000) {
+      //   document.getElementsByTagName("html")[0].setAttribute("class", "pc-style");
+      // }
+    })(window, document)
+  </script>
+
+  <script>
+    var isSafari =
+      /Safari/.test(navigator.userAgent) &&
+      !/Chrome/.test(navigator.userAgent)
+    if (isSafari) {
+      let lastTouchEnd = 0 //
+      document.addEventListener('touchstart', function (event) {
+        if (event.touches.length > 1) {
+          event.preventDefault()
+        }
+      })
+      document.addEventListener(
+        'touchend',
+        function (event) {
+          let now = new Date().getTime()
+          if (now - lastTouchEnd <= 500) {
+            event.preventDefault()
+          } else {
+            lastTouchEnd = now
+          }
+        },
+        false
+      )
+      document.addEventListener('gesturestart', function (event) {
+        event.preventDefault()
+      })
+      document.addEventListener('dblclick', function (event) {
+        event.preventDefault()
+      })
+    }
+  </script>
+
+  <!-- kwaiq -->
+  <!--<script>-->
+  <!--	!(function(e, t) {-->
+  <!--		'object' == typeof exports && 'object' == typeof module ?-->
+  <!--			(module.exports = t()) :-->
+  <!--			'function' == typeof define && define.amd ?-->
+  <!--			define([], t) :-->
+  <!--			'object' == typeof exports ?-->
+  <!--			(exports.install = t()) :-->
+  <!--			(e.install = t())-->
+  <!--	})(window, function() {-->
+  <!--		return (function(e) {-->
+  <!--			var t = {}-->
+
+  <!--			function n(r) {-->
+  <!--				if (t[r]) return t[r].exports-->
+  <!--				var o = (t[r] = {-->
+  <!--					i: r,-->
+  <!--					l: !1,-->
+  <!--					exports: {}-->
+  <!--				})-->
+  <!--				return e[r].call(o.exports, o, o.exports, n), (o.l = !0), o.exports-->
+  <!--			}-->
+  <!--			return (-->
+  <!--				(n.m = e),-->
+  <!--				(n.c = t),-->
+  <!--				(n.d = function(e, t, r) {-->
+  <!--					n.o(e, t) ||-->
+  <!--						Object.defineProperty(e, t, {-->
+  <!--							enumerable: !0,-->
+  <!--							get: r-->
+  <!--						})-->
+  <!--				}),-->
+  <!--				(n.r = function(e) {-->
+  <!--					'undefined' != typeof Symbol &&-->
+  <!--						Symbol.toStringTag &&-->
+  <!--						Object.defineProperty(e, Symbol.toStringTag, {-->
+  <!--							value: 'Module'-->
+  <!--						}),-->
+  <!--						Object.defineProperty(e, '__esModule', {-->
+  <!--							value: !0-->
+  <!--						})-->
+  <!--				}),-->
+  <!--				(n.t = function(e, t) {-->
+  <!--					if ((1 & t && (e = n(e)), 8 & t)) return e-->
+  <!--					if (4 & t && 'object' == typeof e && e && e.__esModule) return e-->
+  <!--					var r = Object.create(null)-->
+  <!--					if (-->
+  <!--						(n.r(r),-->
+  <!--							Object.defineProperty(r, 'default', {-->
+  <!--								enumerable: !0,-->
+  <!--								value: e-->
+  <!--							}),-->
+  <!--							2 & t && 'string' != typeof e)-->
+  <!--					)-->
+  <!--						for (var o in e)-->
+  <!--							n.d(-->
+  <!--								r,-->
+  <!--								o,-->
+  <!--								function(t) {-->
+  <!--									return e[t]-->
+  <!--								}.bind(null, o)-->
+  <!--							)-->
+  <!--					return r-->
+  <!--				}),-->
+  <!--				(n.n = function(e) {-->
+  <!--					var t =-->
+  <!--						e && e.__esModule ?-->
+  <!--						function() {-->
+  <!--							return e.default-->
+  <!--						} :-->
+  <!--						function() {-->
+  <!--							return e-->
+  <!--						}-->
+  <!--					return n.d(t, 'a', t), t-->
+  <!--				}),-->
+  <!--				(n.o = function(e, t) {-->
+  <!--					return Object.prototype.hasOwnProperty.call(e, t)-->
+  <!--				}),-->
+  <!--				(n.p = ''),-->
+  <!--				n((n.s = 0))-->
+  <!--			)-->
+  <!--		})([-->
+  <!--			function(e, t, n) {-->
+  <!--				'use strict'-->
+  <!--				var r =-->
+  <!--					(this && this.__spreadArray) ||-->
+  <!--					function(e, t, n) {-->
+  <!--						if (n || 2 === arguments.length)-->
+  <!--							for (var r, o = 0, i = t.length; o < i; o++)-->
+  <!--								(!r && o in t) ||-->
+  <!--								(r || (r = Array.prototype.slice.call(t, 0, o)),-->
+  <!--									(r[o] = t[o]))-->
+  <!--						return e.concat(r || Array.prototype.slice.call(t))-->
+  <!--					}!(function(e) {-->
+  <!--						var t = window;-->
+  <!--						(t.KwaiAnalyticsObject = e), (t[e] = t[e] || [])-->
+  <!--						var n = t[e]-->
+  <!--						n.methods = [-->
+  <!--							'page',-->
+  <!--							'track',-->
+  <!--							'identify',-->
+  <!--							'instances',-->
+  <!--							'debug',-->
+  <!--							'on',-->
+  <!--							'off',-->
+  <!--							'once',-->
+  <!--							'ready',-->
+  <!--							'alias',-->
+  <!--							'group',-->
+  <!--							'enableCookie',-->
+  <!--							'disableCookie'-->
+  <!--						]-->
+  <!--						var o = function(e, t) {-->
+  <!--							e[t] = function() {-->
+  <!--								var n = Array.from(arguments),-->
+  <!--									o = r([t], n, !0)-->
+  <!--								e.push(o)-->
+  <!--							}-->
+  <!--						}-->
+  <!--						n.methods.forEach(function(e) {-->
+  <!--								o(n, e)-->
+  <!--							}),-->
+  <!--							(n.instance = function(e) {-->
+  <!--								var t = n._i[e] || []-->
+  <!--								return (-->
+  <!--									n.methods.forEach(function(e) {-->
+  <!--										o(t, e)-->
+  <!--									}),-->
+  <!--									t-->
+  <!--								)-->
+  <!--							}),-->
+  <!--							(n.load = function(t, r) {-->
+  <!--								;-->
+  <!--								(n._i = n._i || {}),-->
+  <!--								(n._i[t] = []),-->
+  <!--								(n._i[t]._u =-->
+  <!--									'https://s1.kwai.net/kos/s101/nlav11187/pixel/events.js'),-->
+  <!--								(n._t = n._t || {}),-->
+  <!--								(n._t[t] = +new Date()),-->
+  <!--								(n._o = n._o || {}),-->
+  <!--								(n._o[t] = r || {})-->
+  <!--								var o = document.createElement('script');-->
+  <!--								(o.type = 'text/javascript'),-->
+  <!--								(o.async = !0),-->
+  <!--								(o.src =-->
+  <!--									'https://s1.kwai.net/kos/s101/nlav11187/pixel/events.js?sdkid=' +-->
+  <!--									t +-->
+  <!--									'&lib=' +-->
+  <!--									e)-->
+  <!--								var i = document.getElementsByTagName('script')[0]-->
+  <!--								i.parentNode.insertBefore(o, i)-->
+  <!--							})-->
+  <!--					})('kwaiq')-->
+  <!--			}-->
+  <!--		])-->
+  <!--	})-->
+  <!--</script>-->
+  <!--<script>-->
+  <!--	kwaiq.load('399012253414732194')-->
+  <!--	kwaiq.page()-->
+  <!--</script>-->
+
+  <style>
+    .pc-style {
+      font-size: 54px !important;
+      max-width: 540px;
+      margin: 0px auto;
+      background: #f5f5f5 !important;
+    }
+
+    .app-loading-wrap {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #121725;
+      background-image: url(https://oss.resourceoss.com/game001/loan/0640477e8adfb5.gif);
+      background-size: 48% auto;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
+  <link rel="modulepreload" crossorigin="" href="__CDN__/assets/pubnew/bundle.d3169b93.js">
+  <link rel="modulepreload" crossorigin="" href="__CDN__/assets/pubnew/icons.ee65c48b.js">
+  <link rel="stylesheet" href="__CDN__/assets/pubnew/bundle.a7336069.css">
+  <link rel="stylesheet" href="__CDN__/assets/pubnew/index.bd921fe8.css">
+  <script type="module">
+    try {
+      import.meta.url;
+      import("_").catch(() => 1);
+    } catch (e) { }
+    window.__vite_is_modern_browser = true;
+  </script>
+  <script type="module">
+    ! function () {
+      if (window.__vite_is_modern_browser) return;
+      console.warn(
+        "vite: loading legacy build because dynamic import or import.meta.url is unsupported, syntax error above should be ignored"
+      );
+      var e = document.getElementById("vite-legacy-polyfill"),
+        n = document.createElement("script");
+      n.src = e.src, n.onload = function () {
+        System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))
+      }, document.body.appendChild(n)
+    }();
+  </script>
+  <link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Home.cbb4b96f.js">
+  <link rel="stylesheet" href="__CDN__/assets/pubnew/Home.c5f21993.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/BackIcon.0c3788dd.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/GameCard.5347132d.js">
+  <link rel="stylesheet" href="__CDN__/assets/pubnew/GameCard.8c4a1a11.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/common.32a54c00.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/pay.46ebe093.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Audios.07b47c7e.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Audios.d5459051.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/store.3a5bf4f7.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/index.63484d31.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Recharge.53f44fe2.js">
+  <link rel="stylesheet" href="__CDN__/assets/pubnew/Recharge.a6a91e23.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Message.c5c48d95.js">
+  <link rel="stylesheet" href="__CDN__/assets/pubnew/Message.ada2a5e7.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/message.3949021a.js">
+  <link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Mine.fd2bf6ed.js">
+  <link rel="stylesheet" href="__CDN__/assets/pubnew/Mine.ee162df7.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Withdraw.0c991047.js">
+  <link rel="stylesheet" href="__CDN__/assets/pubnew/Withdraw.f5c1f316.css">
+  <link type="text/css" rel="stylesheet" charset="UTF-8"
+    href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.69JJaQ5G5xA.L.W.O/d=0/rs=AN8SPfpC36MIoWPngdVwZ4RUzeJYZaC7rg/m=el_main_css">
+  <link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Contact.e775aa83.js">
+  <link rel="stylesheet" href="__CDN__/assets/pubnew/Contact.8f3a8edc.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/RecentGames.d4407ea2.js">
+  <link rel="stylesheet" href="__CDN__/assets/pubnew/RecentGames.252325bc.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/detail.67c74a01.js">
+  <link rel="stylesheet" href="__CDN__/assets/pubnew/detail.f821a184.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Setting.addde303.js">
+  <link rel="stylesheet" href="__CDN__/assets/pubnew/Setting.26b5c406.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Privacy.665c2255.js">
+  <link rel="stylesheet" href="__CDN__/assets/pubnew/Privacy.0ed32e7b.css">
+  <link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/VipDesc.b23611d2.js">
+  <link rel="stylesheet" href="__CDN__/assets/pubnew/VipDesc.b2b3bc4b.css">
+</head>
+
+<body style="font-size: 36px;" class="">
+  <div id="app" data-v-app="">
+    <div class="app-wrapper" data-v-1dbc0f80="">
+
+      <div class="app-main" data-v-1dbc0f80="">
+        <div class="main" data-v-1dbc0f80="">
+          <div class="setting-page-wrap pc-mobile pc-wrap" data-v-24a4dbdc="">
+            <div class="nav-header" data-v-24a4dbdc="">
+              <div class="el-image w26 h26 icon-back gm-image w26 h26 icon-back" data-v-24a4dbdc=""
+                style="flex-shrink: 0;"><img onclick="goBack()" src="https://oss.resourceoss.com/game001/loan/464009a8e29923.png"
+                  class="el-image__inner" style="object-fit: cover;"><!--v-if--><!--v-if--></div><b data-v-24a4dbdc="">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">设置</font>
+                </font>
+              </b>
+            </div>
+            <div class="main-wrap mt20" data-v-24a4dbdc="">
+              <div class="row" data-v-24a4dbdc="">
+                <div class="flex-a" data-v-24a4dbdc="">
+                  <div class="el-image w28 h28 br14 mr8 gm-image w28 h28 br14 mr8" data-v-24a4dbdc=""><img
+                      src="https://oss.resourceoss.com/game001/loan/96400a0d341dd6.png" class="el-image__inner"
+                      style="object-fit: cover;"><!--v-if--><!--v-if--></div><span data-v-24a4dbdc="">
+                    <font style="vertical-align: inherit;">
+                      <font style="vertical-align: inherit;" id="userinfonickname">阿佩利多</font>
+                    </font>
+                  </span>
+                </div>
+                <!--<div class="flex-a" data-v-24a4dbdc=""><span data-v-24a4dbdc="">-->
+                <!--    <font style="vertical-align: inherit;">-->
+                <!--      <font style="vertical-align: inherit;" id="userinfonickname">肖恩·瑞恩</font>-->
+                <!--    </font>-->
+                <!--  </span>-->
+                <!--  <img src="https://oss.resourceoss.com/game001/loan/964009f0aa2bad.png" class="h14 w14 ml10"-->
+                <!--    alt="" data-v-24a4dbdc="">-->
+                <!--    </div>-->
+              </div>
+              <div class="row" data-v-24a4dbdc=""><span class="flex1" data-v-24a4dbdc="">
+                  <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">您的账户</font>
+                  </font>
+                </span><span data-v-24a4dbdc="">
+                  <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;" id="userzanghu">admins@gmail.com</font>
+                  </font>
+                </span></div>
+              <!--<div class="row" data-v-24a4dbdc=""><span class="flex1" data-v-24a4dbdc="">-->
+              <!--    <font style="vertical-align: inherit;">-->
+              <!--      <font style="vertical-align: inherit;">电话号码</font>-->
+              <!--    </font>-->
+              <!--  </span><span data-v-24a4dbdc="">-->
+              <!--    <font style="vertical-align: inherit;">-->
+              <!--      <font style="vertical-align: inherit;">-</font>-->
+              <!--    </font>-->
+              <!--  </span>-->
+              <!--  <img src="https://oss.resourceoss.com/game001/loan/964009f0aa2bad.png" class="h14 w14 ml10"-->
+              <!--    alt="" data-v-24a4dbdc="">-->
+              <!--    </div>-->
+                  
+              <div class="row" data-v-24a4dbdc=""><span data-v-24a4dbdc="">
+                  <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">验证实际情况</font>
+                  </font>
+                </span><span data-v-24a4dbdc="">
+                  <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">V1.0.0</font>
+                  </font>
+                </span></div>
+                <!--<a href="/privacy-agreement" class="row" data-v-24a4dbdc=""><span data-v-24a4dbdc="">-->
+                <!--  <font style="vertical-align: inherit;">-->
+                <!--    <font style="vertical-align: inherit;">隐私政策</font>-->
+                <!--  </font>-->
+                <!--</span><svg class="svg-icon vector-right" fill="currentColor" width="8" height="12" viewBox="0 0 8 12"-->
+                <!--  xmlns="http://www.w3.org/2000/svg" data-v-24a4dbdc="">-->
+                <!--  <path-->
+                <!--    d="M0.600147 6.0001L6.30015 0.300098C6.68675 -0.0865017 7.31355 -0.0865017 7.70015 0.300098C8.08675 0.686697 8.08675 1.3135 7.70015 1.7001L3.40015 6.0001L7.70015 10.3001C8.08675 10.6867 8.08675 11.3135 7.70015 11.7001C7.31355 12.0867 6.68675 12.0867 6.30015 11.7001L0.600147 6.0001Z">-->
+                <!--  </path>-->
+                <!--</svg></a>-->
+              <div class="logout-btn flex-a-j b" data-v-24a4dbdc="" onclick="loginout()">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">退出</font>
+                </font>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script nomodule="">
+    ! function () {
+      var e = document,
+        t = e.createElement("script");
+      if (!("noModule" in t) && "onbeforeload" in t) {
+        var n = !1;
+        e.addEventListener("beforeload", (function (e) {
+          if (e.target === t) n = !0;
+          else if (!e.target.hasAttribute("nomodule") || !n) return;
+          e.preventDefault()
+        }), !0), t.type = "module", t.src = ".", e.head.appendChild(t), t.remove()
+      }
+    }();
+  </script>
+  <script nomodule="" crossorigin="" id="vite-legacy-polyfill" src="__CDN__/assets/pubnew/polyfills-legacy.c8b1d8bf.js">
+  </script>
+  <script nomodule="" crossorigin="" id="vite-legacy-entry" data-src="__CDN__/assets/pubnew/index-legacy.091cddff.js">
+    System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))
+  </script>
+
+
+  <script>
+
+
+
+
+    var token = localStorage.getItem('token');
+
+    loginstatus();
+
+    function loginstatus() {
+
+      // https://77vipgame.com/api/user/getUserinfo
+
+      $.ajax({
+        url: "{:url('/api/user/getUserinfo')}",
+        method: 'POST',
+        dataType: 'json',
+        data: {
+          token: token,
+        },
+        success: function (response) {
+
+          console.log(JSON.stringify(response.data));
+
+          // // 请求成功，处理响应数据
+          if (response.code == 1) {
+
+            // localStorage.setItem('token', response.data.token);
+            // localStorage.setItem('userinfo', response.data);
+            // localStorage.setItem('nickname', response.data.nickname);
+            // localStorage.setItem('user_id', response.data.user_id);
+
+
+            // $('#userinfomoney').text(response.data.money);
+            $('#userinfonickname').text(response.data.nickname);
+            $('#userzanghu').text(response.data.username);
+            // $('#userinfoid').text('ID: ' + response.data.user_id);
+
+            // 获取金额
+
+
+
+            // userinfomoney
+
+            // $('#login-btn').hide();
+
+          } else {
+              
+               window.location.href="{:url('/index/index/index')}";
+          
+          }
+        },
+        error: function (xhr, status, error) {
+            window.location.href="{:url('/index/index/index')}";
+        }
+      });
+
+
+    }
+    
+    function goBack() {
+        window.history.back();
+    }
+
+
+    
+    function loginout(){
+        
+       localStorage.removeItem('token');
+
+        
+        Toastify({
+            text: '退出成功',
+            duration: 1000,
+            close: false,
+            gravity: 'bottom',
+            position: 'center',
+            className: 'custom-toast', // 添加自定义类名
+            // backgroundColor: 'linear-gradient(to right, #00b09b, #96c93d)',
+            stopOnFocus: true
+        }).showToast();
+        
+        
+        window.location.href="{:url('/index/index/index')}";
+        
+        // localStorage.setItem('userinfo', response.data);
+        // localStorage.setItem('nickname', response.data.nickname);
+        // localStorage.setItem('user_id', response.data.user_id);
+    }
+
+  </script>
+
+</body>
+
+</html>

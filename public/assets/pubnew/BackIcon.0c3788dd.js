@@ -1,0 +1,1 @@
+import{a as s,b as o}from"./index.63484d31.js";import{o as e,f as r}from"./bundle.d3169b93.js";const _={};function a(n,t){const c=o;return e(),r(c,{src:n.$cdnUrl("464009a8e29923"),class:"w26 h26",style:{"flex-shrink":"0"}},null,8,["src"])}const l=s(_,[["render",a]]);export{l as _};

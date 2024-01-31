@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://h.moverbet.com/recharge -->
+<html lang="en" class="dark hairlines" style="font-size: 39px;">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<link rel="icon" href="https://oss.resourceoss.com/game001/loan/764060a585b000.png">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#da532c">
+		<link rel="apple-touch-icon" sizes="114x114" href="https://oss.resourceoss.com/game001/loan/96404778f0e83f.png">
+		<link rel="apple-touch-startup-image" href="https://oss.resourceoss.com/game001/loan/96404778f0e83f.png">
+		 <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+		<meta name="msapplication-TileColor" content="#da532c">
+		
+		
+		<meta name="theme-color" content="#131521">
+		<title>MoverBet</title>
+		<style>
+		    
+		          .custom-toast {
+            font-size: 15px;
+            /* 调整字体大小 */
+            border-radius: 8px;
+            /* 设置边缘圆润度 */
+        }
+
+		</style>
+
+		<!-- rem layout -->
+		<script>
+			;
+			(function flexible(window, document) {
+				var docEl = document.documentElement
+				var dpr = window.devicePixelRatio || 1
+
+				// adjust body font size
+				function setBodyFontSize() {
+					if (document.body) {
+						document.body.style.fontSize = 12 * dpr + 'px'
+					} else {
+						document.addEventListener('DOMContentLoaded', setBodyFontSize)
+					}
+				}
+				setBodyFontSize()
+
+				// set 1rem = viewWidth / 10
+				function setRemUnit() {
+					var rem = docEl.clientWidth / 10
+					docEl.style.fontSize = rem + 'px'
+				}
+
+				setRemUnit()
+
+				// reset rem unit on page resize
+				window.addEventListener('resize', setRemUnit)
+				window.addEventListener('pageshow', function(e) {
+					if (e.persisted) {
+						setRemUnit()
+					}
+				})
+
+				// detect 0.5px supports
+				if (dpr >= 2) {
+					var fakeBody = document.createElement('body')
+					var testElement = document.createElement('div')
+					testElement.style.border = '.5px solid transparent'
+					fakeBody.appendChild(testElement)
+					docEl.appendChild(fakeBody)
+					if (testElement.offsetHeight === 1) {
+						docEl.classList.add('hairlines')
+					}
+					docEl.removeChild(fakeBody)
+				}
+
+				function deviceType(options) {
+					options = {}
+					var isMobile = false
+					if (
+						navigator.userAgent.match(
+							/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+						)
+					) {
+						options.mobile && options.mobile()
+						isMobile = true
+					} else {
+						options.pc && options.pc()
+					}
+					return isMobile
+				}
+				// if (!deviceType() && document.documentElement.clientWidth > 1000) {
+				//   document.getElementsByTagName("html")[0].setAttribute("class", "pc-style");
+				// }
+			})(window, document)
+		</script>
+
+		<script>
+			var isSafari =
+				/Safari/.test(navigator.userAgent) &&
+				!/Chrome/.test(navigator.userAgent)
+			if (isSafari) {
+				let lastTouchEnd = 0 //
+				document.addEventListener('touchstart', function(event) {
+					if (event.touches.length > 1) {
+						event.preventDefault()
+					}
+				})
+				document.addEventListener(
+					'touchend',
+					function(event) {
+						let now = new Date().getTime()
+						if (now - lastTouchEnd <= 500) {
+							event.preventDefault()
+						} else {
+							lastTouchEnd = now
+						}
+					},
+					false
+				)
+				document.addEventListener('gesturestart', function(event) {
+					event.preventDefault()
+				})
+				document.addEventListener('dblclick', function(event) {
+					event.preventDefault()
+				})
+			}
+		</script>
+
+		<!-- kwaiq -->
+		<script>
+			!(function(e, t) {
+				'object' == typeof exports && 'object' == typeof module ?
+					(module.exports = t()) :
+					'function' == typeof define && define.amd ?
+					define([], t) :
+					'object' == typeof exports ?
+					(exports.install = t()) :
+					(e.install = t())
+			})(window, function() {
+				return (function(e) {
+					var t = {}
+
+					function n(r) {
+						if (t[r]) return t[r].exports
+						var o = (t[r] = {
+							i: r,
+							l: !1,
+							exports: {}
+						})
+						return e[r].call(o.exports, o, o.exports, n), (o.l = !0), o.exports
+					}
+					return (
+						(n.m = e),
+						(n.c = t),
+						(n.d = function(e, t, r) {
+							n.o(e, t) ||
+								Object.defineProperty(e, t, {
+									enumerable: !0,
+									get: r
+								})
+						}),
+						(n.r = function(e) {
+							'undefined' != typeof Symbol &&
+								Symbol.toStringTag &&
+								Object.defineProperty(e, Symbol.toStringTag, {
+									value: 'Module'
+								}),
+								Object.defineProperty(e, '__esModule', {
+									value: !0
+								})
+						}),
+						(n.t = function(e, t) {
+							if ((1 & t && (e = n(e)), 8 & t)) return e
+							if (4 & t && 'object' == typeof e && e && e.__esModule) return e
+							var r = Object.create(null)
+							if (
+								(n.r(r),
+									Object.defineProperty(r, 'default', {
+										enumerable: !0,
+										value: e
+									}),
+									2 & t && 'string' != typeof e)
+							)
+								for (var o in e)
+									n.d(
+										r,
+										o,
+										function(t) {
+											return e[t]
+										}.bind(null, o)
+									)
+							return r
+						}),
+						(n.n = function(e) {
+							var t =
+								e && e.__esModule ?
+								function() {
+									return e.default
+								} :
+								function() {
+									return e
+								}
+							return n.d(t, 'a', t), t
+						}),
+						(n.o = function(e, t) {
+							return Object.prototype.hasOwnProperty.call(e, t)
+						}),
+						(n.p = ''),
+						n((n.s = 0))
+					)
+				})([
+					function(e, t, n) {
+						'use strict'
+						var r =
+							(this && this.__spreadArray) ||
+							function(e, t, n) {
+								if (n || 2 === arguments.length)
+									for (var r, o = 0, i = t.length; o < i; o++)
+										(!r && o in t) ||
+										(r || (r = Array.prototype.slice.call(t, 0, o)),
+											(r[o] = t[o]))
+								return e.concat(r || Array.prototype.slice.call(t))
+							}!(function(e) {
+								var t = window;
+								(t.KwaiAnalyticsObject = e), (t[e] = t[e] || [])
+								var n = t[e]
+								n.methods = [
+									'page',
+									'track',
+									'identify',
+									'instances',
+									'debug',
+									'on',
+									'off',
+									'once',
+									'ready',
+									'alias',
+									'group',
+									'enableCookie',
+									'disableCookie'
+								]
+								var o = function(e, t) {
+									e[t] = function() {
+										var n = Array.from(arguments),
+											o = r([t], n, !0)
+										e.push(o)
+									}
+								}
+								n.methods.forEach(function(e) {
+										o(n, e)
+									}),
+									(n.instance = function(e) {
+										var t = n._i[e] || []
+										return (
+											n.methods.forEach(function(e) {
+												o(t, e)
+											}),
+											t
+										)
+									}),
+									(n.load = function(t, r) {
+										;
+										(n._i = n._i || {}),
+										(n._i[t] = []),
+										(n._i[t]._u =
+											'https://s1.kwai.net/kos/s101/nlav11187/pixel/events.js'),
+										(n._t = n._t || {}),
+										(n._t[t] = +new Date()),
+										(n._o = n._o || {}),
+										(n._o[t] = r || {})
+										var o = document.createElement('script');
+										(o.type = 'text/javascript'),
+										(o.async = !0),
+										(o.src =
+											'https://s1.kwai.net/kos/s101/nlav11187/pixel/events.js?sdkid=' +
+											t +
+											'&lib=' +
+											e)
+										var i = document.getElementsByTagName('script')[0]
+										i.parentNode.insertBefore(o, i)
+									})
+							})('kwaiq')
+					}
+				])
+			})
+		</script>
+		<script>
+			kwaiq.load('399012253414732194')
+			kwaiq.page()
+		</script>
+
+		<style>
+			.pc-style {
+				font-size: 54px !important;
+				max-width: 540px;
+				margin: 0px auto;
+				background: #f5f5f5 !important;
+			}
+
+			.app-loading-wrap {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				height: 100vh;
+				background-color: #121725;
+				background-image: url(https://oss.resourceoss.com/game001/loan/0640477e8adfb5.gif);
+				background-size: 48% auto;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+		</style>
+		<link rel="modulepreload" crossorigin="" href="https://h.moverbet.com/assets/bundle.d3169b93.js">
+		<link rel="modulepreload" crossorigin="" href="https://h.moverbet.com/assets/icons.ee65c48b.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/bundle.a7336069.css">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/index.bd921fe8.css">
+		<script type="module">
+			try {
+				import.meta.url;
+				import("_").catch(() => 1);
+			} catch (e) {}
+			window.__vite_is_modern_browser = true;
+		</script>
+		<script type="module">
+			! function() {
+				if (window.__vite_is_modern_browser) return;
+				console.warn(
+					"vite: loading legacy build because dynamic import or import.meta.url is unsupported, syntax error above should be ignored"
+					);
+				var e = document.getElementById("vite-legacy-polyfill"),
+					n = document.createElement("script");
+				n.src = e.src, n.onload = function() {
+					System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))
+				}, document.body.appendChild(n)
+			}();
+		</script>
+	
+			
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/BalanceRecord.7e833d9e.css">
+		<link rel="modulepreload" as="script" crossorigin="" href="__CDN__/assets/pubnew/Recharge.53f44fe2.js">
+		<link rel="stylesheet" href="__CDN__/assets/pubnew/Recharge.a6a91e23.css">
+	</head>
+	<body style="font-size: 36px;" class="">
+		<div id="app" data-v-app="">
+		
+				<div class="app-main" data-v-1dbc0f80="" style="">
+					<div class="main" data-v-1dbc0f80=""><!---->
+						<div class="recharge-page-wrap pall15" data-v-43557f58="">
+						    
+							<div class="nav-header" data-v-43557f58="">
+								<div  class="el-image w26 h26 icon-back gm-image w26 h26 icon-back" data-v-43557f58=""
+									style="flex-shrink: 0;"><img  onclick="goBack()" src="https://oss.resourceoss.com/game001/loan/464009a8e29923.png"
+										class="el-image__inner" style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+								<b data-v-43557f58="">Recarrega</b>
+							</div>
+							<div data-v-43557f58="">
+								<div class="main-wrap" data-v-43557f58="">
+								    
+									<div class="card mt8" data-v-43557f58="">
+										<div class="el-input el-input--large el-input--prefix fs18" data-v-43557f58="">
+											<!-- input --><!-- prepend slot --><!--v-if-->
+											<div class="el-input__wrapper"><!-- prefix slot --><span
+													class="el-input__prefix"><span class="el-input__prefix-inner">
+														<div class="flex-a" data-v-43557f58=""><span
+																class="c-theme fs14" data-v-43557f58="">R$</span></div>
+														<!--v-if-->
+													</span></span>
+													
+													<input class="el-input__inner" id="monss" auto-complete="off"
+													type="text" autocomplete="off" tabindex="0"
+													placeholder="Depósito mínimo 20.00"
+													id="el-id-5484-46"><!-- suffix slot --><!--v-if--></div>
+											<!-- append slot --><!--v-if-->
+										</div>
+										
+										
+										
+										<div class="" data-v-43557f58="">
+											<div class="el-row money-wrap mt15 fs14" data-v-43557f58=""
+												style="margin-left: -5px; margin-right: -5px;">
+												<div class="el-col el-col-24 el-col-xs-8 el-col-sm-8 el-col-md-8 is-guttered"
+													data-v-43557f58="" style="padding-right: 5px; padding-left: 5px;">
+													<div class="money-item h35 fs12" data-v-43557f58="">20</div>
+												</div>
+												<div class="el-col el-col-24 el-col-xs-8 el-col-sm-8 el-col-md-8 is-guttered"
+													data-v-43557f58="" style="padding-right: 5px; padding-left: 5px;">
+													<div class="money-item h35 fs12" data-v-43557f58="">50</div>
+												</div>
+												<div class="el-col el-col-24 el-col-xs-8 el-col-sm-8 el-col-md-8 is-guttered"
+													data-v-43557f58="" style="padding-right: 5px; padding-left: 5px;">
+													<div class="money-item h35 fs12" data-v-43557f58="">100</div>
+												</div>
+												<div class="el-col el-col-24 el-col-xs-8 el-col-sm-8 el-col-md-8 is-guttered"
+													data-v-43557f58="" style="padding-right: 5px; padding-left: 5px;">
+													<div class="money-item h35 fs12" data-v-43557f58="">300</div>
+												</div>
+												<div class="el-col el-col-24 el-col-xs-8 el-col-sm-8 el-col-md-8 is-guttered"
+													data-v-43557f58="" style="padding-right: 5px; padding-left: 5px;">
+													<div class="money-item h35 fs12 " data-v-43557f58="">500</div>
+												</div>
+												<div class="el-col el-col-24 el-col-xs-8 el-col-sm-8 el-col-md-8 is-guttered"
+													data-v-43557f58="" style="padding-right: 5px; padding-left: 5px;">
+													<div class="money-item h35 fs12 " data-v-43557f58="">1000</div>
+												</div>
+												<div class="el-col el-col-24 el-col-xs-8 el-col-sm-8 el-col-md-8 is-guttered"
+													data-v-43557f58="" style="padding-right: 5px; padding-left: 5px;">
+													<div class="money-item h35 fs12" data-v-43557f58=""> 5000</div>
+												</div>
+												<div class="el-col el-col-24 el-col-xs-8 el-col-sm-8 el-col-md-8 is-guttered"
+													data-v-43557f58="" style="padding-right: 5px; padding-left: 5px;">
+													<div class="money-item h35 fs12" data-v-43557f58="">10000</div>
+												</div>
+												<div class="el-col el-col-24 el-col-xs-8 el-col-sm-8 el-col-md-8 is-guttered"
+													data-v-43557f58="" style="padding-right: 5px; padding-left: 5px;">
+													<div class="money-item h35 fs12" data-v-43557f58="">20000</div>
+												</div>
+											</div>
+										</div>
+										
+										
+										
+									</div>
+									<p class="mt20 mb10 ta" data-v-43557f58=""><span class="block-title fs12"
+											data-v-43557f58="">Escolha o método de pagamento</span></p>
+									<div class="el-radio-group" role="radiogroup" aria-label="radio-group"
+										data-v-43557f58="" id="el-id-5484-47"><label
+											class="el-radio is-checked el-radio--large h44" data-v-43557f58=""><span
+												class="el-radio__input is-checked"><input class="el-radio__original"
+													name="el-id-5484-48" type="radio" value="mtbtop1"><span
+													class="el-radio__inner"></span></span><span
+												class="el-radio__label"><span class="fs13" data-v-43557f58="">Canal de
+													pagamento rápido</span></span></label></div>
+													
+													
+													<button onclick="ixnxi()"
+										class="el-button el-button--primary el-button--large mt30 submit-btn h35 fs14"
+										aria-disabled="false" type="button" data-v-43557f58=""><!--v-if--><span
+											class=""> Enviar </span></button>
+									<div class="teach-wrap mt20 pb30" data-v-43557f58="">
+										<div class="title-wrap flex-a-j" data-v-43557f58="">
+											<div class="line" data-v-43557f58=""></div>
+											<div class="ml10 mr10 c-theme2 fs14" data-v-43557f58="">Tutorial de recarga
+											</div>
+											<div class="line" data-v-43557f58=""></div>
+										</div>
+								
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!---->
+				
+				
+				<div class="tab-bar-wrap" data-v-66175f60="" data-v-1dbc0f80="">
+					<div class="fixed-placeholder" data-v-66175f60="">&nbsp;</div>
+					<div class="tab-bar fs10" data-v-66175f60="">
+						<div class="inner-wrap" data-v-66175f60="">
+							<div class="tab-item" data-v-66175f60="">
+								<div class="el-image icon gm-image icon" data-v-66175f60=""><img
+										src="./MoverBet_files/16400a38f22950.png" class="el-image__inner"
+										style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+								<p data-v-66175f60="">Jogos</p>
+							</div><a href="https://h.moverbet.com/invite-reward" class="tab-item" data-v-66175f60="">
+								<div class="el-image icon gm-image icon" data-v-66175f60=""><img
+										src="./MoverBet_files/86400ab49b757f.png" class="el-image__inner"
+										style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+								<p data-v-66175f60="">Convidar</p>
+							</a><a href="https://h.moverbet.com/activity" class="tab-item" data-v-66175f60="">
+								<div class="icon-wrap" data-v-66175f60="">
+									<div class="el-image icon gm-image icon" data-v-66175f60=""><img
+											src="./MoverBet_files/76400aae7cad19.png" class="el-image__inner"
+											style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+								</div>
+								<p data-v-66175f60="">Bônus</p>
+							</a><a href="https://h.moverbet.com/chat" class="tab-item" data-v-66175f60="">
+								<div class="el-image icon gm-image icon" data-v-66175f60=""><img
+										src="./MoverBet_files/36400aaba50627.png" class="el-image__inner"
+										style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+								<p data-v-66175f60="">Consultar</p>
+							</a><a href="https://h.moverbet.com/mine" class="tab-item" data-v-66175f60="">
+								<div class="el-image icon gm-image icon" data-v-66175f60=""><img
+										src="./MoverBet_files/46400ab1122a66.png" class="el-image__inner"
+										style="object-fit: cover;"><!--v-if--><!--v-if--></div>
+								<p data-v-66175f60="">Minha</p>
+							</a>
+						</div>
+					</div>
+				</div><!----><!----><!---->
+				<div data-v-1dbc0f80="">
+					<div><audio preload="auto">
+							<source src="https://oss.resourceoss.com/game001/loan/363c27b93eb1a3.mp3" type="audio/mpeg">
+						</audio><audio preload="auto">
+							<source src="https://oss.resourceoss.com/game001/loan/963c27ab8dd206.mp3" type="audio/mpeg">
+						</audio><audio preload="auto">
+							<source src="https://oss.resourceoss.com/game001/loan/663c27af30f767.mp3" type="audio/mpeg">
+						</audio></div>
+				</div>
+			</div>
+		</div>
+	<script>
+	    
+	    
+        	    // 获取所有金额项的 DOM 元素
+        const moneyItems = document.querySelectorAll('.money-item');
+        
+        // 遍历金额项，为每个项添加点击事件监听器
+        moneyItems.forEach((item) => {
+          item.addEventListener('click', () => {
+            // 移除所有金额项的选中样式
+            moneyItems.forEach((item) => {
+              item.classList.remove('active');
+            });
+        
+            // 添加被点击项的选中样式
+            item.classList.add('active');
+        
+            // 在控制台打印被点击项的金额值
+            monss
+            
+            $("#monss").val(item.textContent.trim());
+            
+            // console.log(item.textContent.trim());
+            
+            // 在此处可以编写其他需要执行的逻辑代码
+            // ...
+          });
+        });
+        
+        
+        
+        
+        
+        // denglu
+        function ixnxi(e) {
+             var token = localStorage.getItem('token');
+            var monss= $("#monss").val();
+          
+            if (!monss) {
+                Toastify({
+                    text: '金额不为空',
+                    duration: 1000,
+                    close: false,
+                    gravity: 'bottom',
+                    position: 'center',
+                    className: 'custom-toast', // 添加自定义类名
+                    // backgroundColor: 'linear-gradient(to right, #00b09b, #96c93d)',
+                    stopOnFocus: true
+                }).showToast();
+                return false;
+            }
+         
+
+            $.ajax({
+                url: "{:url('/api/index/ixnxi')}",
+                method: 'POST',
+                dataType: 'json',
+                data: {
+                    monss: monss,
+                    type: 0,
+                    token: token,
+                    
+                },
+                success: function (response) {
+                    // 请求成功，处理响应数据
+                    if (response.code == 1) {
+
+                        
+                        Toastify({
+                            text: response.msg,
+                            duration: 1000,
+                            close: false,
+                            gravity: 'bottom',
+                            position: 'center',
+                            className: 'custom-toast', // 添加自定义类名
+                            // backgroundColor: 'linear-gradient(to right, #00b09b, #96c93d)',
+                            stopOnFocus: true
+                        }).showToast();
+
+
+                        // closes();
+
+
+                    } else {
+                        Toastify({
+                            text: response.msg,
+                            duration: 1000,
+                            // 持续显示时间（毫秒）
+                            close: false,
+                            // 显示关闭按钮
+                            gravity: 'bottom',
+                            // 显示位置（top、bottom）
+                            position: 'center',
+                            className: 'custom-toast', // 添加自定义类名
+                            // 对齐位置（left、right、center）
+                            //backgroundColor: 'linear-gradient(to right, #00b09b, #96c93d)', // 背景颜色
+                            stopOnFocus: true // 鼠标悬停时停止
+                        }).showToast();
+                    }
+                },
+                error: function (xhr, status, error) {
+                    Toastify({
+                        text: '游戏维护中...',
+                        duration: 1000,
+                        // 持续显示时间（毫秒）
+                        close: false,
+                        // 显示关闭按钮
+                        gravity: 'bottom',
+                        // 显示位置（top、bottom）
+                        position: 'center',
+                        // 对齐位置（left、right、center）
+                        //backgroundColor: 'linear-gradient(to right, #00b09b, #96c93d)', // 背景颜色
+                        stopOnFocus: true // 鼠标悬停时停止计时
+                    }).showToast();
+                    console.log(error);
+                }
+            });
+
+
+        }
+        
+        
+          function goBack() {
+        window.history.back();
+    }
+
+        
+	</script>
+
+		<script nomodule="">
+			! function() {
+				var e = document,
+					t = e.createElement("script");
+				if (!("noModule" in t) && "onbeforeload" in t) {
+					var n = !1;
+					e.addEventListener("beforeload", (function(e) {
+						if (e.target === t) n = !0;
+						else if (!e.target.hasAttribute("nomodule") || !n) return;
+						e.preventDefault()
+					}), !0), t.type = "module", t.src = ".", e.head.appendChild(t), t.remove()
+				}
+			}();
+		</script>
+		
+		   <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    
+      <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+
+		<div class="el-overlay" style="z-index: 2002; display: none;">
+			<div role="dialog" aria-modal="true" aria-labelledby="el-id-5484-2" aria-describedby="el-id-5484-3"
+				class="el-overlay-dialog"></div>
+		</div>
+		<div class="el-overlay" style="z-index: 2020; display: none;">
+			<div role="dialog" aria-modal="true" aria-labelledby="el-id-5484-8" aria-describedby="el-id-5484-9"
+				class="el-overlay-dialog"></div>
+		</div>
+		<div class="el-overlay" style="z-index: 2017; display: none;">
+			<div role="dialog" aria-modal="true" aria-labelledby="el-id-5484-10" aria-describedby="el-id-5484-11"
+				class="el-overlay-dialog"></div>
+		</div>
+		<div class="el-overlay" style="z-index: 2009; display: none;">
+			<div role="dialog" aria-modal="true" aria-labelledby="el-id-5484-18" aria-describedby="el-id-5484-19"
+				class="el-overlay-dialog"></div>
+		</div>
+		<div class="el-overlay" style="z-index: 2021; display: none;">
+			<div role="dialog" aria-modal="true" aria-labelledby="el-id-5484-44" aria-describedby="el-id-5484-45"
+				class="el-overlay-dialog"></div>
+		</div>
+	</body>
+</html>
